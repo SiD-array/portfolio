@@ -194,11 +194,11 @@ const Footer = () => {
               <div className="space-y-3">
                 <p className="text-text-gray">
                   <span className="text-neon-cyan">Email:</span><br />
-                  siddharth.bhople@example.com
+                  sid.work0403@gmail.com
                 </p>
                 <p className="text-text-gray">
                   <span className="text-neon-purple">Location:</span><br />
-                  Rochester, NY
+                  Rochester, NY, USA
                 </p>
                 <p className="text-text-gray">
                   <span className="text-neon-cyan">Status:</span><br />
