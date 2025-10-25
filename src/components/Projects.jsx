@@ -86,6 +86,90 @@ const Projects = () => {
         "Implemented user authentication and bookmarking system",
         "Deployed fully responsive UI across desktop and mobile using Bootstrap and CSS Grid"
       ]
+    },
+    {
+      id: 4,
+      title: "AI-Powered Code Assistant",
+      description: "An intelligent code completion and suggestion tool that helps developers write better code using natural language processing and code analysis.",
+      longDescription: "Building an AI-powered development tool that analyzes code context and provides intelligent suggestions, bug detection, and code optimization recommendations. The system uses transformer models trained on open-source code repositories to understand programming patterns and best practices.",
+      image: "/api/placeholder/600/400",
+      technologies: ["Python", "Transformers", "FastAPI", "React", "TypeScript", "OpenAI API", "Redis"],
+      category: "ml",
+      github: "https://github.com/SiD-array/ai-code-assistant",
+      live: "#",
+      features: [
+        "Intelligent code completion",
+        "Bug detection and fixes",
+        "Code optimization suggestions",
+        "Natural language queries",
+        "Multi-language support"
+      ],
+      icon: FaCode,
+      color: "neon-purple",
+      date: "Currently Working",
+      status: "in-progress",
+      achievements: [
+        "Implementing transformer-based code analysis",
+        "Building natural language processing pipeline",
+        "Developing real-time code suggestions",
+        "Creating multi-language support framework"
+      ]
+    },
+    {
+      id: 5,
+      title: "E-Commerce Analytics Dashboard",
+      description: "A comprehensive analytics platform for e-commerce businesses with real-time metrics, customer insights, and sales forecasting.",
+      longDescription: "Developing a powerful analytics dashboard that processes large volumes of e-commerce data to provide actionable insights. The system includes customer segmentation, sales forecasting using time series analysis, and automated reporting with customizable dashboards.",
+      image: "/api/placeholder/600/400",
+      technologies: ["React", "D3.js", "Python", "Pandas", "Scikit-learn", "PostgreSQL", "Docker"],
+      category: "data",
+      github: "https://github.com/SiD-array/ecommerce-analytics",
+      live: "#",
+      features: [
+        "Real-time sales metrics",
+        "Customer segmentation",
+        "Sales forecasting",
+        "Interactive visualizations",
+        "Automated reporting"
+      ],
+      icon: FaChartLine,
+      color: "neon-cyan",
+      date: "Currently Working",
+      status: "in-progress",
+      achievements: [
+        "Building real-time data processing pipeline",
+        "Implementing customer segmentation algorithms",
+        "Creating interactive D3.js visualizations",
+        "Developing automated reporting system"
+      ]
+    },
+    {
+      id: 6,
+      title: "Mobile-First Task Manager",
+      description: "A responsive task management application with team collaboration features, real-time updates, and productivity analytics.",
+      longDescription: "Creating a modern task management solution with real-time collaboration, drag-and-drop functionality, and productivity insights. The app features offline support, push notifications, and integrates with popular productivity tools.",
+      image: "/api/placeholder/600/400",
+      technologies: ["React Native", "Node.js", "Socket.io", "MongoDB", "Firebase", "Redux", "Expo"],
+      category: "mobile",
+      github: "https://github.com/SiD-array/task-manager",
+      live: "#",
+      features: [
+        "Real-time collaboration",
+        "Drag-and-drop interface",
+        "Productivity analytics",
+        "Offline support",
+        "Push notifications"
+      ],
+      icon: FaMobile,
+      color: "neon-purple",
+      date: "Currently Working",
+      status: "in-progress",
+      achievements: [
+        "Building cross-platform mobile app with React Native",
+        "Implementing real-time collaboration with Socket.io",
+        "Creating offline-first architecture",
+        "Developing productivity analytics dashboard"
+      ]
     }
   ]
 
@@ -212,6 +296,15 @@ const Projects = () => {
                       </span>
                     </div>
 
+                    {/* Status Badge for In-Progress Projects */}
+                    {project.status === 'in-progress' && (
+                      <div className="absolute top-4 right-4">
+                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-orange-500/20 text-orange-400 border border-orange-500/30 animate-pulse">
+                          Currently Working
+                        </span>
+                      </div>
+                    )}
+
                     {/* Action Buttons */}
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
@@ -231,16 +324,18 @@ const Projects = () => {
                       >
                         <FaGithub size={16} />
                       </motion.a>
-                      <motion.a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="p-2 bg-dark-bg/80 rounded-full text-text-light hover:text-neon-cyan transition-colors duration-300"
-                      >
-                        <FaExternalLinkAlt size={16} />
-                      </motion.a>
+                      {project.live !== "#" && (
+                        <motion.a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          className="p-2 bg-dark-bg/80 rounded-full text-text-light hover:text-neon-cyan transition-colors duration-300"
+                        >
+                          <FaExternalLinkAlt size={16} />
+                        </motion.a>
+                      )}
                     </motion.div>
                   </div>
 
