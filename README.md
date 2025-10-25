@@ -2,6 +2,12 @@
 
 A modern, responsive portfolio website showcasing my skills in Full-Stack Development and Machine Learning. Built with React, Vite, and Tailwind CSS.
 
+## 🌐 Live Demo
+
+**🔗 [View Live Portfolio](https://sid-array.github.io/portfolio/)**
+
+The portfolio is currently deployed and live on GitHub Pages.
+
 ## ✨ Features
 
 - **Modern Design**: Clean, professional UI with neon accents and glass morphism effects
@@ -106,22 +112,34 @@ Update the following files to customize your content:
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### GitHub Pages (Current Deployment)
+The portfolio is currently deployed on GitHub Pages and is live at:
+**https://sid-array.github.io/portfolio/**
+
+#### Manual Deployment to GitHub Pages:
+```bash
+# Build the project
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+#### GitHub Actions Deployment:
+The repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically deploys when you push to the main branch.
+
+### Alternative Deployment Options
+
+#### Vercel
 1. Push your code to GitHub
 2. Connect your repository to [Vercel](https://vercel.com)
 3. Deploy automatically
 
-### Netlify
+#### Netlify
 1. Push your code to GitHub
 2. Connect your repository to [Netlify](https://netlify.com)
 3. Set build command: `npm run build`
 4. Set publish directory: `dist`
-
-### Manual Deployment
-```bash
-npm run build
-# Upload the 'dist' folder to your hosting provider
-```
 
 ## 📱 Responsive Design
 

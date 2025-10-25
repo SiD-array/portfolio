@@ -81,7 +81,7 @@ const Navbar = ({ activeSection }) => {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <motion.a
-              href="https://github.com/siddharthbhople"
+              href="https://github.com/SiD-array"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
@@ -91,7 +91,7 @@ const Navbar = ({ activeSection }) => {
               <FaGithub size={20} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/siddharthbhople"
+              href="https://linkedin.com/in/siddharth-bhople"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
@@ -101,7 +101,7 @@ const Navbar = ({ activeSection }) => {
               <FaLinkedin size={20} />
             </motion.a>
             <motion.a
-              href="mailto:siddharth.bhople@example.com"
+              href="mailto:sid.work0403@gmail.com"
               whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
               className="text-text-gray hover:text-neon-cyan transition-colors duration-300"
@@ -143,7 +143,7 @@ const Navbar = ({ activeSection }) => {
             ))}
             <div className="flex items-center justify-center space-x-6 pt-4 border-t border-border-gray">
               <motion.a
-                href="https://github.com/siddharthbhople"
+                href="https://github.com/SiD-array"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2 }}
@@ -152,7 +152,7 @@ const Navbar = ({ activeSection }) => {
                 <FaGithub size={20} />
               </motion.a>
               <motion.a
-                href="https://linkedin.com/in/siddharthbhople"
+                href="https://linkedin.com/in/siddharth-bhople"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2 }}
@@ -161,7 +161,7 @@ const Navbar = ({ activeSection }) => {
                 <FaLinkedin size={20} />
               </motion.a>
               <motion.a
-                href="mailto:siddharth.bhople@example.com"
+                href="mailto:sid.work0403@gmail.com"
                 whileHover={{ scale: 1.2 }}
                 className="text-text-gray hover:text-neon-cyan transition-colors duration-300"
               >

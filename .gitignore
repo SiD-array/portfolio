@@ -8,6 +8,10 @@ yarn-error.log*
 dist/
 build/
 
+# GitHub Pages deployment
+public/404.html
+public/favicon.ico
+
 # Environment variables
 .env
 .env.local
