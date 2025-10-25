@@ -10,21 +10,23 @@ const Experience = () => {
       id: 1,
       company: "Verzeo EduTech",
       position: "Machine Learning Intern",
-      duration: "June 2023 - August 2023",
-      location: "Remote",
+      duration: "May 2021 – July 2021",
+      location: "Indore, India",
       type: "Internship",
-      description: "Developed and implemented machine learning models for educational data analysis and student performance prediction.",
+      description: "Developed and implemented machine learning models for educational data analysis and recommendation systems.",
       achievements: [
-        "Built a student performance prediction model using Random Forest and XGBoost algorithms",
-        "Improved model accuracy by 15% through feature engineering and hyperparameter tuning",
-        "Created interactive dashboards for data visualization using Python and Tableau",
-        "Collaborated with a team of 5 developers to deliver ML solutions for educational analytics"
+        "Achieved **71% accuracy** with ML models employing Naïve Bayes, SVM, and Logistic Regression, outperforming **baseline by 15%**",
+        "Transformed preprocessing pipeline to cut sparse features by **30%** and expedite training with the aid of Python and TensorFlow",
+        "Designed a content-based movie recommendation system that processed **5,000+ movies** and delivered top-5 personalized recommendations in under **1 second/query**",
+        "Created interactive dashboards to analyze user behavior and feature correlations, cutting manual analysis time by **50%**"
       ],
-      technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Tableau", "Jupyter"],
+      technologies: ["Python", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Naïve Bayes", "SVM", "Logistic Regression"],
       metrics: [
-        { label: "Model Accuracy", value: "92%", improvement: "+15%" },
-        { label: "Data Processing", value: "10K+ records", improvement: "Daily" },
-        { label: "Team Size", value: "5 members", improvement: "Cross-functional" }
+        { label: "Model Accuracy", value: "71%", improvement: "+15% vs baseline" },
+        { label: "Movies Processed", value: "5,000+", improvement: "Content-based system" },
+        { label: "Query Speed", value: "<1 second", improvement: "Top-5 recommendations" },
+        { label: "Feature Reduction", value: "30%", improvement: "Sparse features cut" },
+        { label: "Analysis Time", value: "50%", improvement: "Manual time reduction" }
       ],
       icon: FaBuilding,
       color: "neon-cyan"
