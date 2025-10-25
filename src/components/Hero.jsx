@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { FaChevronDown, FaCode, FaRocket, FaBrain } from 'react-icons/fa'
+import { FaChevronDown, FaCode, FaRocket, FaBrain, FaDownload } from 'react-icons/fa'
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState('')
@@ -29,6 +29,15 @@ const Hero = () => {
 
   const scrollToProjects = () => {
     document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const downloadResume = () => {
+    const link = document.createElement('a')
+    link.href = '/portfolio/resume.pdf'
+    link.download = 'Siddharth_Bhople_Resume.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   const containerVariants = {
@@ -161,9 +170,11 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(123, 97, 255, 0.4)" }}
             whileTap={{ scale: 0.95 }}
-            className="btn-secondary text-lg px-8 py-4"
+            onClick={downloadResume}
+            className="btn-secondary text-lg px-8 py-4 flex items-center space-x-2"
           >
-            Download Resume
+            <FaDownload size={18} />
+            <span>Download Resume</span>
           </motion.button>
         </motion.div>
 
