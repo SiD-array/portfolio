@@ -16,7 +16,7 @@ const Projects = () => {
       technologies: ["React (Vite)", "Recharts", "Firebase", "FastAPI", "ML Libraries"],
       category: "fullstack",
       github: "https://github.com/SiD-array/StockView",
-      live: "https://stock-view-five.vercel.app/",
+      live: "https://stock-view-ebon.vercel.app/",
       features: [
         "Interactive multi-timeframe charts",
         "Anomaly detection algorithms",
