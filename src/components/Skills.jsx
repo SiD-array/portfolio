@@ -108,7 +108,7 @@ const Skills = () => {
     
     // Data/ML Libraries
     { name: "NumPy", icon: SiNumpy, level: 88, color: "#4DABCF", category: "data_ml" },
-    { name: "Pandas", icon: SiPandas, level: 90, color: "#150458", category: "data_ml" },
+    { name: "Pandas", icon: SiPandas, level: 90, color: "#E377C2", category: "data_ml" },
     { name: "Scikit-learn", icon: SiScikitlearn, level: 88, color: "#F7931E", category: "data_ml" },
     { name: "TensorFlow", icon: SiTensorflow, level: 75, color: "#FF6F00", category: "data_ml" },
     { name: "Matplotlib", icon: FaChartLine, level: 85, color: "#11557C", category: "data_ml" },
