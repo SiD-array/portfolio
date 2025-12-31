@@ -85,41 +85,42 @@ const Skills = () => {
 
   const allSkills = [
     // Languages
-    { name: "Python", icon: FaPython, level: 90, color: "#3776AB", category: "languages" },
-    { name: "Java", icon: FaCode, level: 95, color: "#ED8B00", category: "languages" },
-    { name: "JavaScript", icon: FaJs, level: 90, color: "#F7DF1E", category: "languages" },
-    { name: "React", icon: FaReact, level: 88, color: "#61DAFB", category: "languages" },
-    { name: "Node.js", icon: FaNodeJs, level: 85, color: "#339933", category: "languages" },
-    { name: "C/C++", icon: FaCode, level: 80, color: "#00599C", category: "languages" },
-    { name: "SQL", icon: FaDatabase, level: 85, color: "#336791", category: "languages" },
-    { name: "HTML/CSS", icon: FaHtml5, level: 95, color: "#E34F26", category: "languages" },
-    { name: "C#/.NET", icon: FaCode, level: 75, color: "#512BD4", category: "languages" },
+    { name: "Python", icon: FaPython, level: 92, color: "#3776AB", category: "languages" },
+    { name: "Java", icon: FaCode, level: 88, color: "#ED8B00", category: "languages" },
+    { name: "JavaScript", icon: FaJs, level: 85, color: "#F7DF1E", category: "languages" },
+    { name: "React", icon: FaReact, level: 82, color: "#61DAFB", category: "languages" },
+    { name: "Node.js", icon: FaNodeJs, level: 78, color: "#339933", category: "languages" },
+    { name: "C/C++", icon: FaCode, level: 75, color: "#00599C", category: "languages" },
+    { name: "SQL", icon: FaDatabase, level: 80, color: "#336791", category: "languages" },
+    { name: "HTML/CSS", icon: FaHtml5, level: 90, color: "#E34F26", category: "languages" },
+    { name: "C#/.NET", icon: FaCode, level: 70, color: "#512BD4", category: "languages" },
     
     // Frameworks/Tools
-    { name: "FastAPI", icon: FaCode, level: 85, color: "#009688", category: "frameworks" },
-    { name: "Streamlit", icon: FaCode, level: 80, color: "#FF4B4B", category: "frameworks" },
-    { name: "Vite", icon: FaCode, level: 90, color: "#646CFF", category: "frameworks" },
-    { name: "Bootstrap", icon: FaBootstrap, level: 85, color: "#7952B3", category: "frameworks" },
-    { name: "TailwindCSS", icon: SiTailwindcss, level: 90, color: "#06B6D4", category: "frameworks" },
-    { name: "Firebase", icon: SiFirebase, level: 80, color: "#FFCA28", category: "frameworks" },
-    { name: "JavaFX", icon: FaCode, level: 70, color: "#ED8B00", category: "frameworks" },
-    { name: "Git", icon: FaGitAlt, level: 90, color: "#F05032", category: "frameworks" },
-    { name: "VS Code", icon: FaCode, level: 95, color: "#007ACC", category: "frameworks" },
+    { name: "FastAPI", icon: FaCode, level: 80, color: "#009688", category: "frameworks" },
+    { name: "Streamlit", icon: FaCode, level: 78, color: "#FF4B4B", category: "frameworks" },
+    { name: "Vite", icon: FaCode, level: 85, color: "#646CFF", category: "frameworks" },
+    { name: "Bootstrap", icon: FaBootstrap, level: 82, color: "#7952B3", category: "frameworks" },
+    { name: "TailwindCSS", icon: SiTailwindcss, level: 85, color: "#06B6D4", category: "frameworks" },
+    { name: "Firebase", icon: SiFirebase, level: 75, color: "#FFCA28", category: "frameworks" },
+    { name: "JavaFX", icon: FaCode, level: 68, color: "#ED8B00", category: "frameworks" },
+    { name: "Git", icon: FaGitAlt, level: 88, color: "#F05032", category: "frameworks" },
+    { name: "VS Code", icon: FaCode, level: 90, color: "#007ACC", category: "frameworks" },
     
     // Data/ML Libraries
-    { name: "NumPy", icon: SiNumpy, level: 90, color: "#4DABCF", category: "data_ml" },
-    { name: "Pandas", icon: SiPandas, level: 95, color: "#150458", category: "data_ml" },
-    { name: "Scikit-learn", icon: SiScikitlearn, level: 90, color: "#F7931E", category: "data_ml" },
-    { name: "TensorFlow", icon: SiTensorflow, level: 85, color: "#FF6F00", category: "data_ml" },
-    { name: "XGBoost", icon: FaCode, level: 80, color: "#FF6600", category: "data_ml" },
-    { name: "LightGBM", icon: FaCode, level: 75, color: "#FF6600", category: "data_ml" },
-    { name: "NLTK", icon: FaCode, level: 80, color: "#FF6B6B", category: "data_ml" },
-    { name: "Recharts", icon: FaCode, level: 85, color: "#FF6B6B", category: "data_ml" },
-    { name: "TA-Lib", icon: FaCode, level: 70, color: "#FF6B6B", category: "data_ml" },
+    { name: "NumPy", icon: SiNumpy, level: 88, color: "#4DABCF", category: "data_ml" },
+    { name: "Pandas", icon: SiPandas, level: 90, color: "#150458", category: "data_ml" },
+    { name: "Scikit-learn", icon: SiScikitlearn, level: 88, color: "#F7931E", category: "data_ml" },
+    { name: "TensorFlow", icon: SiTensorflow, level: 75, color: "#FF6F00", category: "data_ml" },
+    { name: "Matplotlib", icon: FaChartLine, level: 85, color: "#11557C", category: "data_ml" },
+    { name: "XGBoost", icon: FaCode, level: 78, color: "#FF6600", category: "data_ml" },
+    { name: "LightGBM", icon: FaCode, level: 72, color: "#FF6600", category: "data_ml" },
+    { name: "NLTK", icon: FaCode, level: 75, color: "#FF6B6B", category: "data_ml" },
+    { name: "Recharts", icon: FaCode, level: 80, color: "#FF6B6B", category: "data_ml" },
+    { name: "TA-Lib", icon: FaCode, level: 65, color: "#FF6B6B", category: "data_ml" },
     
     // Databases
-    { name: "MySQL", icon: SiMysql, level: 85, color: "#4479A1", category: "databases" },
-    { name: "PostgreSQL", icon: SiPostgresql, level: 80, color: "#336791", category: "databases" }
+    { name: "MySQL", icon: SiMysql, level: 82, color: "#4479A1", category: "databases" },
+    { name: "PostgreSQL", icon: SiPostgresql, level: 75, color: "#336791", category: "databases" }
   ]
 
   const filteredSkills = selectedCategory === 'all' 
