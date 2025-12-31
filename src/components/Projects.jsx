@@ -9,6 +9,33 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "RNA-Seq Cancer Biomarker Discovery",
+      description: "Implemented a robust ML pipeline analyzing RNA-Seq data from TCGA, achieving 100% F1-Macro Score for multi-class cancer subtype classification with a validated 50-gene biomarker panel.",
+      longDescription: "Built a comprehensive machine learning pipeline to analyze high-dimensional RNA sequencing data from The Cancer Genome Atlas (TCGA), successfully classifying five distinct cancer subtypes (BRCA, COAD, KIRC, LUAD, PRAD). The pipeline uses model interpretability to establish a definitive 50-gene biomarker panel validated via external bioinformatics pathway analysis.",
+      image: "/api/placeholder/600/400",
+      technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "gProfiler"],
+      category: "ml",
+      github: "https://github.com/SiD-array/rna-seq-cancer-biomarker-discovery",
+      live: "https://biomarker-discovery-app.vercel.app",
+      features: [
+        "Multi-class cancer subtype classification",
+        "50-gene biomarker panel discovery",
+        "Pathway enrichment analysis",
+        "Interactive web dashboard",
+        "Model interpretability analysis"
+      ],
+      icon: FaBrain,
+      color: "neon-purple",
+      date: "December 2025",
+      achievements: [
+        "Achieved 100% F1-Macro Score using Logistic Regression classifier",
+        "Identified and validated 50-gene biomarker panel via gProfiler pathway analysis",
+        "Processed 801 samples with 20,531 gene features across 5 cancer types",
+        "Deployed interactive dashboard on Vercel for result visualization"
+      ]
+    },
+    {
+      id: 2,
       title: "Real-Time Stock Analysis Dashboard",
       description: "Designed and deployed a full-stack stock analysis web application with interactive multi-timeframe charts, anomaly detection, and predictive modeling.",
       longDescription: "Built a comprehensive financial dashboard that processes real-time stock data and applies multiple machine learning algorithms for price prediction. The system includes interactive visualizations, portfolio tracking, and automated alerts with 99.9% uptime supporting 100+ active users.",
@@ -35,7 +62,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 2,
+      id: 3,
       title: "Movie Recommendation System",
       description: "Built content-based recommender system on 5K+ movies with improved preprocessing and similarity accuracy.",
       longDescription: "Developed a sophisticated movie recommendation engine using content-based filtering with Count Vectorizer and cosine similarity. The system processes movie metadata and user preferences to provide personalized recommendations with 18% improved accuracy through advanced preprocessing techniques.",
@@ -61,7 +88,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 3,
+      id: 4,
       title: "PG Life Web Application",
       description: "Pioneered full-stack housing platform for exploring and bookmarking accommodations across multiple cities with user authentication.",
       longDescription: "Created a comprehensive property management platform for PG accommodations with advanced search capabilities, user authentication, and real-time resource updates. The platform features responsive design, optimized database queries, and seamless user experience across desktop and mobile environments.",
@@ -88,7 +115,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 4,
+      id: 5,
       title: "AI-Powered Code Assistant",
       description: "An intelligent code completion and suggestion tool that helps developers write better code using natural language processing and code analysis.",
       longDescription: "Building an AI-powered development tool that analyzes code context and provides intelligent suggestions, bug detection, and code optimization recommendations. The system uses transformer models trained on open-source code repositories to understand programming patterns and best practices.",
@@ -113,34 +140,6 @@ const Projects = () => {
         "Building natural language processing pipeline",
         "Developing real-time code suggestions",
         "Creating multi-language support framework"
-      ]
-    },
-    {
-      id: 5,
-      title: "E-Commerce Analytics Dashboard",
-      description: "A comprehensive analytics platform for e-commerce businesses with real-time metrics, customer insights, and sales forecasting.",
-      longDescription: "Developing a powerful analytics dashboard that processes large volumes of e-commerce data to provide actionable insights. The system includes customer segmentation, sales forecasting using time series analysis, and automated reporting with customizable dashboards.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "D3.js", "Python", "Pandas", "Scikit-learn", "PostgreSQL", "Docker"],
-      category: "data",
-      github: "https://github.com/SiD-array/ecommerce-analytics",
-      live: "#",
-      features: [
-        "Real-time sales metrics",
-        "Customer segmentation",
-        "Sales forecasting",
-        "Interactive visualizations",
-        "Automated reporting"
-      ],
-      icon: FaChartLine,
-      color: "neon-cyan",
-      date: "Currently Working",
-      status: "in-progress",
-      achievements: [
-        "Building real-time data processing pipeline",
-        "Implementing customer segmentation algorithms",
-        "Creating interactive D3.js visualizations",
-        "Developing automated reporting system"
       ]
     },
     {
