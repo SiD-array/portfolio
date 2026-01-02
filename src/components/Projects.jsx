@@ -54,7 +54,7 @@ const Projects = () => {
       ],
       icon: FaDatabase,
       color: "neon-cyan",
-      date: "December 2025",
+      date: "November 2025",
       achievements: [
         "Processed and analyzed ~50 million Reddit comments",
         "Achieved 23.6x query speedup with optimized indexing",
