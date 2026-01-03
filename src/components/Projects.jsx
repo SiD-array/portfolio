@@ -1,14 +1,33 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaGithub, FaExternalLinkAlt, FaCode, FaDatabase, FaBrain, FaChartLine, FaMobile, FaServer, FaEye, FaCheckCircle, FaCog, FaChevronDown, FaChevronUp } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaCode, FaDatabase, FaBrain, FaChartLine, FaMobile, FaServer, FaEye, FaCheckCircle, FaCog, FaChevronDown, FaChevronUp, FaStar, FaRegStar } from 'react-icons/fa'
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [showAllCompleted, setShowAllCompleted] = useState(false)
   const [showAllInProgress, setShowAllInProgress] = useState(false)
+  const [starredProjects, setStarredProjects] = useState([1, 2, 4]) // Default starred project IDs
   
   const PROJECTS_TO_SHOW = 3
+  const MAX_STARRED = 3
+
+  const toggleStar = (projectId) => {
+    setStarredProjects(prev => {
+      if (prev.includes(projectId)) {
+        // Remove star
+        return prev.filter(id => id !== projectId)
+      } else if (prev.length < MAX_STARRED) {
+        // Add star if under limit
+        return [...prev, projectId]
+      } else {
+        // Already at max, show alert or just don't add
+        return prev
+      }
+    })
+  }
+
+  const isStarred = (projectId) => starredProjects.includes(projectId)
 
   // Completed Projects
   const completedProjects = [
@@ -365,15 +384,25 @@ const Projects = () => {
           <>
             <motion.div
               variants={itemVariants}
-              className="flex items-center justify-center gap-3 mb-8"
+              className="flex flex-col items-center gap-2 mb-8"
             >
-              <FaCheckCircle className="text-green-400 text-2xl" />
-              <h3 className="text-2xl md:text-3xl font-bold text-text-light">
-                Completed Projects
-              </h3>
-              <span className="px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-sm font-medium">
-                {filteredCompletedProjects.length}
-              </span>
+              <div className="flex items-center gap-3">
+                <FaCheckCircle className="text-green-400 text-2xl" />
+                <h3 className="text-2xl md:text-3xl font-bold text-text-light">
+                  Completed Projects
+                </h3>
+                <span className="px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-sm font-medium">
+                  {filteredCompletedProjects.length}
+                </span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-text-gray">
+                <FaStar className="text-yellow-400" size={14} />
+                <span>
+                  {starredProjects.length}/{MAX_STARRED} Featured Projects
+                </span>
+                <span className="text-text-gray/50">•</span>
+                <span className="text-yellow-400/70">Click ⭐ to feature your favorites</span>
+              </div>
             </motion.div>
 
             <motion.div
@@ -397,7 +426,20 @@ const Projects = () => {
                     onHoverEnd={() => setHoveredProject(null)}
                     className="group relative"
                   >
-                    <div className="glass-effect rounded-lg overflow-hidden hover:neon-glow transition-all duration-300 h-full">
+                    <div className={`glass-effect rounded-lg overflow-hidden hover:neon-glow transition-all duration-300 h-full ${
+                      isStarred(project.id) 
+                        ? 'ring-2 ring-yellow-400/50 shadow-[0_0_20px_rgba(250,204,21,0.3)]' 
+                        : ''
+                    }`}>
+                      {/* Starred Badge */}
+                      {isStarred(project.id) && (
+                        <div className="absolute top-0 left-0 z-10">
+                          <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-dark-bg text-xs font-bold px-3 py-1 rounded-br-lg flex items-center gap-1">
+                            <FaStar size={10} />
+                            <span>Featured</span>
+                          </div>
+                        </div>
+                      )}
                       {/* Project Image */}
                       <div className="relative h-48 bg-gradient-to-br from-neon-cyan/20 to-neon-purple/20 overflow-hidden">
                         <motion.div
@@ -415,8 +457,24 @@ const Projects = () => {
                           </span>
                         </div>
 
-                        {/* Completed Badge */}
-                        <div className="absolute top-4 right-4">
+                        {/* Completed Badge & Star Button */}
+                        <div className="absolute top-4 right-4 flex items-center gap-2">
+                          <motion.button
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.9 }}
+                            onClick={(e) => {
+                              e.stopPropagation()
+                              toggleStar(project.id)
+                            }}
+                            className={`p-1.5 rounded-full transition-all duration-300 ${
+                              isStarred(project.id)
+                                ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30'
+                                : 'bg-dark-bg/60 text-text-gray hover:text-yellow-400 border border-transparent hover:border-yellow-500/30'
+                            }`}
+                            title={isStarred(project.id) ? 'Remove from favorites' : starredProjects.length >= MAX_STARRED ? 'Max 3 starred projects' : 'Add to favorites'}
+                          >
+                            {isStarred(project.id) ? <FaStar size={14} /> : <FaRegStar size={14} />}
+                          </motion.button>
                           <span className="px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
                             ✓ Completed
                           </span>
