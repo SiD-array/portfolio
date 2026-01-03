@@ -150,8 +150,8 @@ const Hero = () => {
           className="text-lg md:text-xl text-text-gray mb-12 max-w-3xl mx-auto leading-relaxed"
         >
           Passionate about creating innovative solutions through code. 
-          I specialize in building scalable web applications, implementing machine learning algorithms, 
-          and crafting beautiful user experiences that make a difference.
+          I specialize in building scalable web applications, implementing machine learning pipelines for biomarker discovery, 
+          processing big data with functional programming, and crafting beautiful user experiences that make a difference.
         </motion.p>
 
         {/* CTA Buttons */}

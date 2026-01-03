@@ -93,7 +93,8 @@ const Skills = () => {
     { name: "C/C++", icon: FaCode, level: 75, color: "#00599C", category: "languages" },
     { name: "SQL", icon: FaDatabase, level: 80, color: "#336791", category: "languages" },
     { name: "HTML/CSS", icon: FaHtml5, level: 90, color: "#E34F26", category: "languages" },
-    { name: "C#/.NET", icon: FaCode, level: 70, color: "#512BD4", category: "languages" },
+    { name: "C#/.NET", icon: FaCode, level: 75, color: "#512BD4", category: "languages" },
+    { name: "F#", icon: FaCode, level: 72, color: "#378BBA", category: "languages" },
     
     // Frameworks/Tools
     { name: "FastAPI", icon: FaCode, level: 80, color: "#009688", category: "frameworks" },
@@ -117,10 +118,13 @@ const Skills = () => {
     { name: "NLTK", icon: FaCode, level: 75, color: "#FF6B6B", category: "data_ml" },
     { name: "Recharts", icon: FaCode, level: 80, color: "#FF6B6B", category: "data_ml" },
     { name: "TA-Lib", icon: FaCode, level: 65, color: "#FF6B6B", category: "data_ml" },
+    { name: "Deedle", icon: FaCode, level: 70, color: "#378BBA", category: "data_ml" },
+    { name: "Plotly.NET", icon: FaChartLine, level: 72, color: "#3F4F75", category: "data_ml" },
     
     // Databases
     { name: "MySQL", icon: SiMysql, level: 82, color: "#4479A1", category: "databases" },
-    { name: "PostgreSQL", icon: SiPostgresql, level: 75, color: "#336791", category: "databases" }
+    { name: "PostgreSQL", icon: SiPostgresql, level: 80, color: "#336791", category: "databases" },
+    { name: "MongoDB", icon: SiMongodb, level: 75, color: "#47A248", category: "databases" }
   ]
 
   const filteredSkills = selectedCategory === 'all' 

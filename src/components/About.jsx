@@ -24,20 +24,20 @@ const About = () => {
 
   const passions = [
     {
-      title: "Machine Learning",
-      description: "Building intelligent systems that learn and adapt",
+      title: "Machine Learning & AI",
+      description: "Building intelligent systems for biomarker discovery, predictions, and pattern recognition",
       icon: FaBrain,
       color: "neon-cyan"
     },
     {
       title: "Full-Stack Development",
-      description: "Creating end-to-end solutions with modern technologies",
+      description: "Creating end-to-end solutions with React, .NET, and modern frameworks",
       icon: FaLaptopCode,
       color: "neon-purple"
     },
     {
-      title: "Data Visualization",
-      description: "Transforming complex data into meaningful insights",
+      title: "Big Data & Analytics",
+      description: "Processing millions of records with PostgreSQL, MongoDB, and functional programming",
       icon: FaRocket,
       color: "neon-cyan"
     }
@@ -88,7 +88,7 @@ const About = () => {
           >
             A passionate Computer Science graduate student with a love for creating innovative solutions 
             through code. My journey from IPS Academy to RIT has shaped my expertise in machine learning, 
-            full-stack development, and data visualization.
+            big data analytics, functional programming, and full-stack development.
           </motion.p>
         </motion.div>
 
