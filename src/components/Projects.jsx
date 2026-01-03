@@ -299,10 +299,19 @@ const Projects = () => {
   const filteredCompletedProjects = filterProjects(completedProjects)
   const filteredInProgressProjects = filterProjects(inProgressProjects)
   
+  // Sort projects with starred ones at the top
+  const sortedCompletedProjects = [...filteredCompletedProjects].sort((a, b) => {
+    const aStarred = starredProjects.includes(a.id)
+    const bStarred = starredProjects.includes(b.id)
+    if (aStarred && !bStarred) return -1
+    if (!aStarred && bStarred) return 1
+    return 0 // Keep original order for same starred status
+  })
+  
   // Get displayed projects based on "show all" state
   const displayedCompletedProjects = showAllCompleted 
-    ? filteredCompletedProjects 
-    : filteredCompletedProjects.slice(0, PROJECTS_TO_SHOW)
+    ? sortedCompletedProjects 
+    : sortedCompletedProjects.slice(0, PROJECTS_TO_SHOW)
   
   const displayedInProgressProjects = showAllInProgress 
     ? filteredInProgressProjects 
