@@ -68,6 +68,33 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "Sudoku Puzzle Generator & Solver",
+      description: "A comprehensive Sudoku application built in C# with backtracking algorithm for puzzle generation and solving. Features both console and Windows Forms GUI with MVVM architecture.",
+      longDescription: "Built a complete Sudoku puzzle application in C# that generates and solves puzzles of different sizes (4x4, 9x9) and difficulty levels. Implements backtracking algorithm for puzzle generation and validation. Features clean MVVM architecture with both console and Windows Forms interfaces.",
+      image: "/api/placeholder/600/400",
+      technologies: ["C#", ".NET 9.0", "Windows Forms", "MVVM", "Backtracking Algorithm"],
+      category: "fullstack",
+      github: "https://github.com/SiD-array/sudoku-puzzle",
+      live: "#",
+      features: [
+        "Multiple grid sizes (4x4 and 9x9)",
+        "Three difficulty levels",
+        "Backtracking puzzle generation",
+        "Windows Forms GUI",
+        "Real-time input validation"
+      ],
+      icon: FaCode,
+      color: "neon-purple",
+      date: "October 2025",
+      achievements: [
+        "Implemented backtracking algorithm for valid Sudoku generation",
+        "Built clean MVVM architecture with separation of concerns",
+        "Created interactive Windows Forms GUI with visual grid separators",
+        "Developed comprehensive validation for rows, columns, and sub-boxes"
+      ]
+    },
+    {
+      id: 4,
       title: "Real-Time Stock Analysis Dashboard",
       description: "Designed and deployed a full-stack stock analysis web application with interactive multi-timeframe charts, anomaly detection, and predictive modeling.",
       longDescription: "Built a comprehensive financial dashboard that processes real-time stock data and applies multiple machine learning algorithms for price prediction. The system includes interactive visualizations, portfolio tracking, and automated alerts with 99.9% uptime supporting 100+ active users.",
@@ -94,7 +121,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 4,
+      id: 5,
       title: "Movie Recommendation System",
       description: "Built content-based recommender system on 5K+ movies with improved preprocessing and similarity accuracy.",
       longDescription: "Developed a sophisticated movie recommendation engine using content-based filtering with Count Vectorizer and cosine similarity. The system processes movie metadata and user preferences to provide personalized recommendations with 18% improved accuracy through advanced preprocessing techniques.",
@@ -120,7 +147,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 5,
+      id: 6,
       title: "PG Life Web Application",
       description: "Pioneered full-stack housing platform for exploring and bookmarking accommodations across multiple cities with user authentication.",
       longDescription: "Created a comprehensive property management platform for PG accommodations with advanced search capabilities, user authentication, and real-time resource updates. The platform features responsive design, optimized database queries, and seamless user experience across desktop and mobile environments.",
