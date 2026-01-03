@@ -7,7 +7,7 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [showAllCompleted, setShowAllCompleted] = useState(false)
   const [showAllInProgress, setShowAllInProgress] = useState(false)
-  const [starredProjects, setStarredProjects] = useState([1, 2, 4]) // Default starred project IDs
+  const [starredProjects, setStarredProjects] = useState([1, 2, 5]) // Default starred project IDs
   
   const PROJECTS_TO_SHOW = 3
   const MAX_STARRED = 3
@@ -87,6 +87,33 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "F# Applications in Data Science",
+      description: "Demonstrating functional programming approaches to data science using F#. Features data analysis, cleaning, and visualization using Deedle & Plotly.NET with the Palmer Penguins dataset.",
+      longDescription: "A collection of projects showcasing how F#'s expressive syntax, type safety, and functional paradigms make it excellent for data analysis workflows. Demonstrates functional data transformation pipelines, safe missing value handling with pattern matching, and interactive visualizations.",
+      image: "/api/placeholder/600/400",
+      technologies: ["F#", ".NET 9.0", "Deedle", "Plotly.NET", "FSharp.Data"],
+      category: "data",
+      github: "https://github.com/SiD-array/F-applications",
+      live: "https://f-applications.vercel.app",
+      features: [
+        "Functional data transformation pipelines",
+        "Type-safe data manipulation with Deedle",
+        "Interactive Plotly.NET visualizations",
+        "Pattern matching for missing values",
+        "Palmer Penguins data analysis"
+      ],
+      icon: FaChartLine,
+      color: "neon-cyan",
+      date: "November 2025",
+      achievements: [
+        "Built complete data analysis pipeline using functional programming",
+        "Implemented type-safe data cleaning with F# pattern matching",
+        "Created interactive HTML visualizations with Plotly.NET",
+        "Demonstrated F#'s pipeline operator for readable data transformations"
+      ]
+    },
+    {
+      id: 4,
       title: "Sudoku Puzzle Generator & Solver",
       description: "A comprehensive Sudoku application built in C# with backtracking algorithm for puzzle generation and solving. Features both console and Windows Forms GUI with MVVM architecture.",
       longDescription: "Built a complete Sudoku puzzle application in C# that generates and solves puzzles of different sizes (4x4, 9x9) and difficulty levels. Implements backtracking algorithm for puzzle generation and validation. Features clean MVVM architecture with both console and Windows Forms interfaces.",
@@ -113,7 +140,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 4,
+      id: 5,
       title: "Real-Time Stock Analysis Dashboard",
       description: "Designed and deployed a full-stack stock analysis web application with interactive multi-timeframe charts, anomaly detection, and predictive modeling.",
       longDescription: "Built a comprehensive financial dashboard that processes real-time stock data and applies multiple machine learning algorithms for price prediction. The system includes interactive visualizations, portfolio tracking, and automated alerts with 99.9% uptime supporting 100+ active users.",
@@ -140,7 +167,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 5,
+      id: 6,
       title: "Movie Recommendation System",
       description: "Built content-based recommender system on 5K+ movies with improved preprocessing and similarity accuracy.",
       longDescription: "Developed a sophisticated movie recommendation engine using content-based filtering with Count Vectorizer and cosine similarity. The system processes movie metadata and user preferences to provide personalized recommendations with 18% improved accuracy through advanced preprocessing techniques.",
@@ -166,7 +193,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 6,
+      id: 7,
       title: "PG Life Web Application",
       description: "Pioneered full-stack housing platform for exploring and bookmarking accommodations across multiple cities with user authentication.",
       longDescription: "Created a comprehensive property management platform for PG accommodations with advanced search capabilities, user authentication, and real-time resource updates. The platform features responsive design, optimized database queries, and seamless user experience across desktop and mobile environments.",
@@ -410,7 +437,6 @@ const Projects = () => {
                   {starredProjects.length}/{MAX_STARRED} Featured Projects
                 </span>
                 <span className="text-text-gray/50">•</span>
-                <span className="text-yellow-400/70">Click ⭐ to feature your favorites</span>
               </div>
             </motion.div>
 
