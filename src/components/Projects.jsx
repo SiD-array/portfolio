@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaGithub, FaExternalLinkAlt, FaCode, FaDatabase, FaBrain, FaChartLine, FaMobile, FaServer, FaEye, FaCheckCircle, FaCog } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaCode, FaDatabase, FaBrain, FaChartLine, FaMobile, FaServer, FaEye, FaCheckCircle, FaCog, FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState('all')
+  const [showAllCompleted, setShowAllCompleted] = useState(false)
+  const [showAllInProgress, setShowAllInProgress] = useState(false)
+  
+  const PROJECTS_TO_SHOW = 3
 
   // Completed Projects
   const completedProjects = [
@@ -248,6 +252,15 @@ const Projects = () => {
 
   const filteredCompletedProjects = filterProjects(completedProjects)
   const filteredInProgressProjects = filterProjects(inProgressProjects)
+  
+  // Get displayed projects based on "show all" state
+  const displayedCompletedProjects = showAllCompleted 
+    ? filteredCompletedProjects 
+    : filteredCompletedProjects.slice(0, PROJECTS_TO_SHOW)
+  
+  const displayedInProgressProjects = showAllInProgress 
+    ? filteredInProgressProjects 
+    : filteredInProgressProjects.slice(0, PROJECTS_TO_SHOW)
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -341,10 +354,10 @@ const Projects = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
               <AnimatePresence>
-                {filteredCompletedProjects.map((project) => (
+                {displayedCompletedProjects.map((project) => (
                   <motion.div
                     key={project.id}
                     variants={itemVariants}
@@ -485,6 +498,37 @@ const Projects = () => {
                 ))}
               </AnimatePresence>
             </motion.div>
+
+            {/* View All Completed Projects Button */}
+            {filteredCompletedProjects.length > PROJECTS_TO_SHOW && (
+              <motion.div
+                variants={itemVariants}
+                className="text-center mt-8 mb-16"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => setShowAllCompleted(!showAllCompleted)}
+                  className="inline-flex items-center space-x-2 px-6 py-3 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 hover:bg-green-500/20 transition-all duration-300"
+                >
+                  {showAllCompleted ? (
+                    <>
+                      <FaChevronUp size={16} />
+                      <span>Show Less</span>
+                    </>
+                  ) : (
+                    <>
+                      <FaChevronDown size={16} />
+                      <span>View All {filteredCompletedProjects.length} Completed Projects</span>
+                    </>
+                  )}
+                </motion.button>
+              </motion.div>
+            )}
+
+            {filteredCompletedProjects.length <= PROJECTS_TO_SHOW && (
+              <div className="mb-16"></div>
+            )}
           </>
         )}
 
@@ -512,7 +556,7 @@ const Projects = () => {
               className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
               <AnimatePresence>
-                {filteredInProgressProjects.map((project) => (
+                {displayedInProgressProjects.map((project) => (
                   <motion.div
                     key={project.id}
                     variants={itemVariants}
@@ -653,6 +697,33 @@ const Projects = () => {
                 ))}
               </AnimatePresence>
             </motion.div>
+
+            {/* View All In Progress Projects Button */}
+            {filteredInProgressProjects.length > PROJECTS_TO_SHOW && (
+              <motion.div
+                variants={itemVariants}
+                className="text-center mt-8"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => setShowAllInProgress(!showAllInProgress)}
+                  className="inline-flex items-center space-x-2 px-6 py-3 bg-orange-500/10 border border-orange-500/30 rounded-full text-orange-400 hover:bg-orange-500/20 transition-all duration-300"
+                >
+                  {showAllInProgress ? (
+                    <>
+                      <FaChevronUp size={16} />
+                      <span>Show Less</span>
+                    </>
+                  ) : (
+                    <>
+                      <FaChevronDown size={16} />
+                      <span>View All {filteredInProgressProjects.length} In Progress Projects</span>
+                    </>
+                  )}
+                </motion.button>
+              </motion.div>
+            )}
           </>
         )}
 
