@@ -225,6 +225,34 @@ const Projects = () => {
   const inProgressProjects = [
     {
       id: 101,
+      title: "Autonomous Cloud Governance",
+      description: "Proactive multi-agent orchestration with real-time fiscal governance. Features 'Agentic Circuit Breakers' and dynamic model routing to prevent cloud bill shock in autonomous workflows.",
+      longDescription: "Budget-Aware AI Squad is a decentralized framework integrating financial self-awareness into AI agent meshes. It acts as a 'Fiscal Guardrail' ensuring autonomous systems stay within budget while maintaining high task performance through Supervisor, Accountant, Researcher, and Writer agents.",
+      image: "/api/placeholder/600/400",
+      technologies: ["Python", "Ollama", "LocalStack", "LangGraph", "Multi-Agent Systems", "FinOps"],
+      category: "ml",
+      github: "https://github.com/SiD-array/Autonomous-Cloud-Governance",
+      live: "#",
+      features: [
+        "Agentic Circuit Breakers",
+        "Dynamic Model Routing",
+        "Real-time Cost Telemetry",
+        "Multi-agent Orchestration",
+        "Local LLM Integration"
+      ],
+      icon: FaCloud,
+      color: "neon-cyan",
+      date: "In Progress",
+      status: "in-progress",
+      achievements: [
+        "Implementing Supervisor-Accountant-Researcher-Writer agent pipeline",
+        "Building fiscal ledger for token cost tracking",
+        "Creating circuit breakers for budget governance",
+        "Integrating Ollama for local LLM execution"
+      ]
+    },
+    {
+      id: 102,
       title: "AI-Powered Code Assistant",
       description: "An intelligent code completion and suggestion tool that helps developers write better code using natural language processing and code analysis.",
       longDescription: "Building an AI-powered development tool that analyzes code context and provides intelligent suggestions, bug detection, and code optimization recommendations. The system uses transformer models trained on open-source code repositories to understand programming patterns and best practices.",
@@ -252,7 +280,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 102,
+      id: 103,
       title: "E-Commerce Analytics Dashboard",
       description: "A comprehensive analytics platform for e-commerce businesses with real-time metrics, customer insights, and sales forecasting.",
       longDescription: "Developing a powerful analytics dashboard that processes large volumes of e-commerce data to provide actionable insights. The system includes customer segmentation, sales forecasting using time series analysis, and automated reporting with customizable dashboards.",
@@ -278,35 +306,8 @@ const Projects = () => {
         "Creating interactive D3.js visualizations",
         "Developing automated reporting system"
       ]
-    },
-    {
-      id: 103,
-      title: "Autonomous Cloud Governance",
-      description: "Proactive multi-agent orchestration with real-time fiscal governance. Features 'Agentic Circuit Breakers' and dynamic model routing to prevent cloud bill shock in autonomous workflows.",
-      longDescription: "Budget-Aware AI Squad is a decentralized framework integrating financial self-awareness into AI agent meshes. It acts as a 'Fiscal Guardrail' ensuring autonomous systems stay within budget while maintaining high task performance through Supervisor, Accountant, Researcher, and Writer agents.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Python", "Ollama", "LocalStack", "LangGraph", "Multi-Agent Systems", "FinOps"],
-      category: "ml",
-      github: "https://github.com/SiD-array/Autonomous-Cloud-Governance",
-      live: "#",
-      features: [
-        "Agentic Circuit Breakers",
-        "Dynamic Model Routing",
-        "Real-time Cost Telemetry",
-        "Multi-agent Orchestration",
-        "Local LLM Integration"
-      ],
-      icon: FaCloud,
-      color: "neon-cyan",
-      date: "In Progress",
-      status: "in-progress",
-      achievements: [
-        "Implementing Supervisor-Accountant-Researcher-Writer agent pipeline",
-        "Building fiscal ledger for token cost tracking",
-        "Creating circuit breakers for budget governance",
-        "Integrating Ollama for local LLM execution"
-      ]
     }
+    
   ]
 
   const categories = [
