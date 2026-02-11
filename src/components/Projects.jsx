@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaGithub, FaExternalLinkAlt, FaCode, FaDatabase, FaBrain, FaChartLine, FaMobile, FaServer, FaEye, FaCheckCircle, FaCog, FaChevronDown, FaChevronUp, FaStar, FaRegStar } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaCode, FaDatabase, FaBrain, FaChartLine, FaMobile, FaServer, FaEye, FaCheckCircle, FaCog, FaChevronDown, FaChevronUp, FaStar, FaRegStar, FaCloud } from 'react-icons/fa'
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
@@ -281,30 +281,30 @@ const Projects = () => {
     },
     {
       id: 103,
-      title: "Mobile-First Task Manager",
-      description: "A responsive task management application with team collaboration features, real-time updates, and productivity analytics.",
-      longDescription: "Creating a modern task management solution with real-time collaboration, drag-and-drop functionality, and productivity insights. The app features offline support, push notifications, and integrates with popular productivity tools.",
+      title: "Autonomous Cloud Governance",
+      description: "Proactive multi-agent orchestration with real-time fiscal governance. Features 'Agentic Circuit Breakers' and dynamic model routing to prevent cloud bill shock in autonomous workflows.",
+      longDescription: "Budget-Aware AI Squad is a decentralized framework integrating financial self-awareness into AI agent meshes. It acts as a 'Fiscal Guardrail' ensuring autonomous systems stay within budget while maintaining high task performance through Supervisor, Accountant, Researcher, and Writer agents.",
       image: "/api/placeholder/600/400",
-      technologies: ["React Native", "Node.js", "Socket.io", "MongoDB", "Firebase", "Redux", "Expo"],
-      category: "mobile",
-      github: "https://github.com/SiD-array/task-manager",
+      technologies: ["Python", "Ollama", "LocalStack", "LangGraph", "Multi-Agent Systems", "FinOps"],
+      category: "ml",
+      github: "https://github.com/SiD-array/Autonomous-Cloud-Governance",
       live: "#",
       features: [
-        "Real-time collaboration",
-        "Drag-and-drop interface",
-        "Productivity analytics",
-        "Offline support",
-        "Push notifications"
+        "Agentic Circuit Breakers",
+        "Dynamic Model Routing",
+        "Real-time Cost Telemetry",
+        "Multi-agent Orchestration",
+        "Local LLM Integration"
       ],
-      icon: FaMobile,
-      color: "neon-purple",
+      icon: FaCloud,
+      color: "neon-cyan",
       date: "In Progress",
       status: "in-progress",
       achievements: [
-        "Building cross-platform mobile app with React Native",
-        "Implementing real-time collaboration with Socket.io",
-        "Creating offline-first architecture",
-        "Developing productivity analytics dashboard"
+        "Implementing Supervisor-Accountant-Researcher-Writer agent pipeline",
+        "Building fiscal ledger for token cost tracking",
+        "Creating circuit breakers for budget governance",
+        "Integrating Ollama for local LLM execution"
       ]
     }
   ]
