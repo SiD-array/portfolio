@@ -168,28 +168,29 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "Movie Recommendation System",
-      description: "Built content-based recommender system on 5K+ movies with improved preprocessing and similarity accuracy.",
-      longDescription: "Developed a sophisticated movie recommendation engine using content-based filtering with Count Vectorizer and cosine similarity. The system processes movie metadata and user preferences to provide personalized recommendations with 18% improved accuracy through advanced preprocessing techniques.",
+      title: "CineMatch - Movie Recommender",
+      description: "Content-based movie recommendation system using TF-IDF algorithm and cosine similarity with a Netflix-inspired Streamlit app deployed on cloud.",
+      longDescription: "A sophisticated movie recommendation engine analyzing movie metadata (genres, cast, crew, keywords, plot) using optimized TF-IDF vectorization with bigram support. Features a modern Netflix-inspired dark theme UI with smooth animations and fast cached performance.",
       image: "/api/placeholder/600/400",
-      technologies: ["Python", "Scikit-learn", "Pandas", "NLTK"],
+      technologies: ["Python", "Streamlit", "Scikit-learn", "Pandas", "NumPy", "TMDB API"],
       category: "ml",
       github: "https://github.com/SiD-array/movie-recommender",
+      live: "https://cinematch-movie-recommend.streamlit.app",
       features: [
-        "Content-based recommendation engine",
-        "Count Vectorizer + cosine similarity",
-        "Advanced text preprocessing",
-        "Interactive Streamlit web app",
-        "5K+ movie database"
+        "TF-IDF with bigram vectorization",
+        "Netflix-inspired dark theme UI",
+        "TMDB API integration",
+        "Cached model loading",
+        "4,800+ movie database"
       ],
       icon: FaBrain,
       color: "neon-purple",
       date: "June 2024",
       achievements: [
-        "Built content-based recommender on 5K+ movies dataset",
-        "Improved similarity accuracy by 18% via enhanced preprocessing",
-        "Implemented stemming and feature engineering techniques",
-        "Launched interactive web application using Streamlit"
+        "Implemented optimized TF-IDF algorithm with bigram support for better recommendations",
+        "Built modern Netflix-inspired UI with smooth animations",
+        "Integrated TMDB API for real-time movie posters and data",
+        "Deployed live app on Streamlit Cloud with cached performance"
       ]
     },
     {
