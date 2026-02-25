@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaGithub, FaExternalLinkAlt, FaCode, FaDatabase, FaBrain, FaChartLine, FaMobile, FaServer, FaEye, FaCheckCircle, FaCog, FaChevronDown, FaChevronUp, FaStar, FaRegStar, FaCloud } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaCode, FaDatabase, FaBrain, FaChartLine, FaMobile, FaServer, FaEye, FaCheckCircle, FaCog, FaChevronDown, FaChevronUp, FaStar, FaRegStar, FaCloud, FaHandPaper } from 'react-icons/fa'
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
@@ -254,58 +254,30 @@ const Projects = () => {
     },
     {
       id: 102,
-      title: "AI-Powered Code Assistant",
-      description: "An intelligent code completion and suggestion tool that helps developers write better code using natural language processing and code analysis.",
-      longDescription: "Building an AI-powered development tool that analyzes code context and provides intelligent suggestions, bug detection, and code optimization recommendations. The system uses transformer models trained on open-source code repositories to understand programming patterns and best practices.",
+      title: "SignLens - Real-Time ASL Recognition",
+      description: "A proof-of-concept system for real-time American Sign Language (ASL) recognition using computer vision and machine learning, achieving 98.45% accuracy.",
+      longDescription: "Building a comprehensive real-time ASL recognition system that captures webcam video, extracts hand landmarks using MediaPipe, and classifies them into ASL gestures to display live captions. The system uses a Random Forest classifier trained on normalized hand landmark data with temporal smoothing for robust predictions.",
       image: "/api/placeholder/600/400",
-      technologies: ["Python", "Transformers", "FastAPI", "React", "TypeScript", "OpenAI API", "Redis"],
+      technologies: ["Python", "OpenCV", "MediaPipe", "Scikit-learn", "Pandas", "NumPy"],
       category: "ml",
-      github: "https://github.com/SiD-array/ai-code-assistant",
+      github: "https://github.com/SiD-array/SignLens-RealTime-ASL-Recognition",
       live: "#",
       features: [
-        "Intelligent code completion",
-        "Bug detection and fixes",
-        "Code optimization suggestions",
-        "Natural language queries",
-        "Multi-language support"
+        "Real-time hand landmark extraction",
+        "Temporal smoothing (7/10 frame agreement)",
+        "Handedness invariance (left/right support)",
+        "Multi-source video input (webcam, file, YouTube)",
+        "Live caption display with confidence scores"
       ],
-      icon: FaCode,
+      icon: FaHandPaper,
       color: "neon-purple",
       date: "In Progress",
       status: "in-progress",
       achievements: [
-        "Implementing transformer-based code analysis",
-        "Building natural language processing pipeline",
-        "Developing real-time code suggestions",
-        "Creating multi-language support framework"
-      ]
-    },
-    {
-      id: 103,
-      title: "E-Commerce Analytics Dashboard",
-      description: "A comprehensive analytics platform for e-commerce businesses with real-time metrics, customer insights, and sales forecasting.",
-      longDescription: "Developing a powerful analytics dashboard that processes large volumes of e-commerce data to provide actionable insights. The system includes customer segmentation, sales forecasting using time series analysis, and automated reporting with customizable dashboards.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "D3.js", "Python", "Pandas", "Scikit-learn", "PostgreSQL", "Docker"],
-      category: "data",
-      github: "https://github.com/SiD-array/ecommerce-analytics",
-      live: "#",
-      features: [
-        "Real-time sales metrics",
-        "Customer segmentation",
-        "Sales forecasting",
-        "Interactive visualizations",
-        "Automated reporting"
-      ],
-      icon: FaChartLine,
-      color: "neon-cyan",
-      date: "In Progress",
-      status: "in-progress",
-      achievements: [
-        "Building real-time data processing pipeline",
-        "Implementing customer segmentation algorithms",
-        "Creating interactive D3.js visualizations",
-        "Developing automated reporting system"
+        "Achieved 98.45% overall accuracy with Random Forest classifier",
+        "Supports 5 gestures: Hello, Thank You, Sorry, Yes, No with F1-scores 0.97-1.00",
+        "Implemented two-stage landmark normalization (translation + scale)",
+        "Building LSTM/RNN for motion-based gesture recognition"
       ]
     }
     
