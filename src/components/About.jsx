@@ -25,7 +25,7 @@ const About = () => {
   const passions = [
     {
       title: "Machine Learning & AI",
-      description: "Building intelligent systems for biomarker discovery, predictions, and pattern recognition",
+      description: "Building intelligent systems for biomarker discovery, computer vision, and real-time recognition",
       icon: FaBrain,
       color: "neon-cyan"
     },
