@@ -53,7 +53,9 @@ import {
   SiJest,
   SiCypress,
   SiWebpack,
-  SiBabel
+  SiBabel,
+  SiOpencv,
+  SiMediapipe
 } from 'react-icons/si'
 
 const Skills = () => {
@@ -120,6 +122,8 @@ const Skills = () => {
     { name: "TA-Lib", icon: FaCode, level: 65, color: "#FF6B6B", category: "data_ml" },
     { name: "Deedle", icon: FaCode, level: 70, color: "#378BBA", category: "data_ml" },
     { name: "Plotly.NET", icon: FaChartLine, level: 72, color: "#3F4F75", category: "data_ml" },
+    { name: "OpenCV", icon: SiOpencv, level: 80, color: "#5C3EE8", category: "data_ml" },
+    { name: "MediaPipe", icon: SiMediapipe, level: 75, color: "#0097A7", category: "data_ml" },
     
     // Databases
     { name: "MySQL", icon: SiMysql, level: 82, color: "#4479A1", category: "databases" },
