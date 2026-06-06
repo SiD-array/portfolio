@@ -8,10 +8,10 @@ const Footer = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const terminalMessages = [
-    "> DAAD RISE Scholar @ BSH (Bosch Group), Berlin 🇩🇪",
-    "> Working on embedded AI & intelligent appliance systems 🤖",
-    "> Building scalable AI with Python, React & LangGraph ⚡",
-    "> Grading CSCI-243 @ RIT · shipping production ML projects 🎓",
+    "> Intern Pre-Development @ BSH Home Appliances Group, Berlin 🇩🇪",
+    "> Building AI-driven features for embedded & backend systems 🤖",
+    "> DAAD RISE Professional Scholar · MS CS @ RIT 🎓",
+    "> Shipping production ML projects with Python, React & LangGraph ⚡",
     "> Open to connect — let's build something impactful 🚀"
   ]
 
@@ -32,6 +32,8 @@ const Footer = () => {
   }, [])
 
   useEffect(() => {
+    setTerminalText('')
+
     const textTimer = setInterval(() => {
       const currentMessage = terminalMessages[currentIndex]
       setTerminalText((prev) => {
@@ -130,7 +132,7 @@ const Footer = () => {
                 &lt;SB/&gt;
               </motion.div>
               <p className="text-text-gray leading-relaxed mb-6 max-w-md">
-                DAAD RISE Scholar @ BSH (Bosch Group) · MS CS @ RIT. 
+                Intern Pre-Development @ BSH Home Appliances Group · MS CS @ RIT. 
                 Software & ML Engineer building scalable AI systems across 
                 embedded intelligence, agentic AI, and full-stack development.
               </p>
@@ -202,7 +204,7 @@ const Footer = () => {
                 </p>
                 <p className="text-text-gray">
                   <span className="text-neon-cyan">Status:</span><br />
-                  DAAD RISE Scholar @ BSH, Berlin
+                  Intern Pre-Development @ BSH, Berlin
                 </p>
               </div>
             </motion.div>
