@@ -123,6 +123,7 @@ const Skills = () => {
     { name: "Plotly.NET", icon: FaChartLine, level: 72, color: "#3F4F75", category: "data_ml" },
     { name: "OpenCV", icon: SiOpencv, level: 80, color: "#5C3EE8", category: "data_ml" },
     { name: "MediaPipe", icon: FaBrain, level: 75, color: "#0097A7", category: "data_ml" },
+    { name: "LangGraph", icon: FaBrain, level: 70, color: "#FF6B6B", category: "data_ml" },
     
     // Databases
     { name: "MySQL", icon: SiMysql, level: 82, color: "#4479A1", category: "databases" },
@@ -304,8 +305,8 @@ const Skills = () => {
               <span className="gradient-text">Continuous Learning</span>
             </h3>
             <p className="text-text-gray leading-relaxed mb-6">
-              I'm constantly exploring new technologies and frameworks to stay at the forefront of software development. 
-              Currently learning about advanced machine learning techniques, cloud architecture, and emerging web technologies.
+              I'm constantly exploring new technologies to stay at the forefront of software development. 
+              Currently deepening expertise in agentic AI, embedded systems, multi-agent orchestration, and scalable cloud architectures.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <motion.div

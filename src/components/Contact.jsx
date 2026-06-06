@@ -110,7 +110,7 @@ const Contact = () => {
     {
       icon: FaLinkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/siddharth-bhople",
+      url: "https://www.linkedin.com/in/siddharth-bhople",
       color: "neon-purple"
     },
     {
@@ -248,13 +248,13 @@ const Contact = () => {
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <h4 className="text-lg font-semibold text-text-light">
-                  Available for Opportunities
+                  Open to Connect
                 </h4>
               </div>
               <p className="text-text-gray leading-relaxed">
-                I'm currently open to new opportunities in full-stack development, 
-                machine learning, and data science roles. Let's discuss how I can 
-                contribute to your team!
+                Selected for the DAAD RISE Professional Scholarship at BSH (Bosch Group) in Berlin. 
+                Open to connecting on full-stack development, machine learning, and scalable AI projects. 
+                Let's discuss how we can collaborate!
               </p>
             </motion.div>
           </motion.div>

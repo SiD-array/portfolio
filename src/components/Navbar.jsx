@@ -91,7 +91,7 @@ const Navbar = ({ activeSection }) => {
               <FaGithub size={20} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/siddharth-bhople"
+              href="https://www.linkedin.com/in/siddharth-bhople"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
@@ -152,7 +152,7 @@ const Navbar = ({ activeSection }) => {
                 <FaGithub size={20} />
               </motion.a>
               <motion.a
-                href="https://linkedin.com/in/siddharth-bhople"
+                href="https://www.linkedin.com/in/siddharth-bhople"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2 }}

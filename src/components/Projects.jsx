@@ -145,7 +145,7 @@ const Projects = () => {
       description: "Designed and deployed a full-stack stock analysis web application with interactive multi-timeframe charts, anomaly detection, and predictive modeling.",
       longDescription: "Built a comprehensive financial dashboard that processes real-time stock data and applies multiple machine learning algorithms for price prediction. The system includes interactive visualizations, portfolio tracking, and automated alerts with 99.9% uptime supporting 100+ active users.",
       image: "/api/placeholder/600/400",
-      technologies: ["React (Vite)", "Recharts", "Firebase", "FastAPI", "ML Libraries"],
+      technologies: ["React (Vite)", "TailwindCSS", "Recharts", "Firebase", "FastAPI", "XGBoost", "TensorFlow", "VADER"],
       category: "fullstack",
       github: "https://github.com/SiD-array/StockView",
       live: "https://stock-view-ebon.vercel.app/",
@@ -158,12 +158,12 @@ const Projects = () => {
       ],
       icon: FaChartLine,
       color: "neon-cyan",
-      date: "July 2025",
+      date: "October 2025",
       achievements: [
-        "Implemented multiple ML algorithms (Linear Regression, Random Forest, XGBoost, LightGBM, CNN)",
-        "Improved prediction accuracy using technical indicators and R², MAE, MSE metrics",
-        "Deployed frontend on Vercel and backend on Railway with 99.9% uptime",
-        "Supporting 100+ active users with real-time data processing"
+        "Integrated 5 ML models: Linear Regression, Random Forest, XGBoost, LightGBM & CNN with comparison dashboard",
+        "Engineered 20+ technical indicators with VADER sentiment analysis and Z-score anomaly detection",
+        "Deployed frontend on Vercel and backend on Render with Firebase-backed watchlist sync",
+        "Complete UI overhaul with dark theme, glassmorphism, and interactive gradient charts"
       ]
     },
     {
@@ -233,7 +233,7 @@ const Projects = () => {
       technologies: ["Python", "Ollama", "LocalStack", "LangGraph", "Multi-Agent Systems", "FinOps"],
       category: "ml",
       github: "https://github.com/SiD-array/Autonomous-Cloud-Governance",
-      live: "#",
+      live: "https://autonomous-cloud-governance.vercel.app",
       features: [
         "Agentic Circuit Breakers",
         "Dynamic Model Routing",
@@ -255,10 +255,10 @@ const Projects = () => {
     {
       id: 102,
       title: "SignLens - Real-Time ASL Recognition",
-      description: "A proof-of-concept system for real-time American Sign Language (ASL) recognition using computer vision and machine learning, achieving 98.45% accuracy.",
-      longDescription: "Building a comprehensive real-time ASL recognition system that captures webcam video, extracts hand landmarks using MediaPipe, and classifies them into ASL gestures to display live captions. The system uses a Random Forest classifier trained on normalized hand landmark data with temporal smoothing for robust predictions.",
+      description: "Real-time American Sign Language recognition using MediaPipe hand landmarks and LSTM sequence modeling over 30-frame sliding windows, scaling toward WLASL100 vocabulary.",
+      longDescription: "Building a comprehensive real-time ASL recognition system that captures webcam video, extracts multi-hand 3D landmarks with MediaPipe, and runs a sliding-window LSTM model over 30-frame sequences to recognize ASL signs with live captions. Includes temporal smoothing, handedness invariance, and support for webcam, file, and YouTube input sources.",
       image: "/api/placeholder/600/400",
-      technologies: ["Python", "OpenCV", "MediaPipe", "Scikit-learn", "Pandas", "NumPy"],
+      technologies: ["Python", "TensorFlow", "OpenCV", "MediaPipe", "LSTM", "Scikit-learn", "WLASL100"],
       category: "ml",
       github: "https://github.com/SiD-array/SignLens-RealTime-ASL-Recognition",
       live: "#",
@@ -274,10 +274,10 @@ const Projects = () => {
       date: "In Progress",
       status: "in-progress",
       achievements: [
-        "Achieved 98.45% overall accuracy with Random Forest classifier",
+        "Achieved 98.45% accuracy with Random Forest; building LSTM for motion-based recognition",
         "Supports 5 gestures: Hello, Thank You, Sorry, Yes, No with F1-scores 0.97-1.00",
-        "Implemented two-stage landmark normalization (translation + scale)",
-        "Building LSTM/RNN for motion-based gesture recognition"
+        "Implemented two-stage landmark normalization (translation + scale) with 7/10 frame agreement",
+        "Scaling toward WLASL100 vocabulary with multi-source video input support"
       ]
     }
     

@@ -7,7 +7,7 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   
-  const fullText = "Hi, I'm Siddharth 👋 — a Computer Science Graduate Student @ RIT specializing in Full-Stack Development & Machine Learning."
+  const fullText = "Hi, I'm Siddharth 👋 — MS CS @ RIT | Incoming DAAD RISE Scholar @ BSH (Bosch Group) | Building Scalable AI Systems."
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -149,9 +149,9 @@ const Hero = () => {
           variants={itemVariants}
           className="text-lg md:text-xl text-text-gray mb-12 max-w-3xl mx-auto leading-relaxed"
         >
-          Passionate about creating innovative solutions through code. 
-          I specialize in building scalable web applications, implementing machine learning for biomarker discovery and computer vision, 
-          processing big data with functional programming, and crafting beautiful user experiences that make a difference.
+          Software & Machine Learning Engineer passionate about building scalable AI systems. 
+          I specialize in full-stack development, interpretable ML pipelines, big data analytics, 
+          and embedded AI — from cancer biomarker discovery to real-time market intelligence.
         </motion.p>
 
         {/* CTA Buttons */}

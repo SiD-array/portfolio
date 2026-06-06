@@ -5,18 +5,18 @@ import { FaGraduationCap, FaCode, FaRocket, FaBrain, FaUniversity, FaLaptopCode 
 const About = () => {
   const education = [
     {
-      year: "2023 - Present",
+      year: "2024 - Present",
       degree: "Master of Science in Computer Science",
       institution: "Rochester Institute of Technology (RIT)",
-      description: "Specializing in Machine Learning, Full-Stack Development, and Data Visualization",
+      description: "Specializing in Machine Learning & Artificial Intelligence, Full-Stack Development, and Data Visualization",
       icon: FaUniversity,
       color: "neon-cyan"
     },
     {
-      year: "2019 - 2023",
-      degree: "Bachelor of Technology in Computer Science",
+      year: "2020 - 2024",
+      degree: "Bachelor of Technology in Computer Science & IT",
       institution: "IPS Academy, Indore",
-      description: "Foundation in Computer Science with focus on algorithms and software development",
+      description: "Foundation in Computer Science with focus on algorithms, software development, and data structures",
       icon: FaGraduationCap,
       color: "neon-purple"
     }
@@ -25,7 +25,7 @@ const About = () => {
   const passions = [
     {
       title: "Machine Learning & AI",
-      description: "Building intelligent systems for biomarker discovery, computer vision, and real-time recognition",
+      description: "Building scalable AI systems for biomarker discovery, embedded intelligence, computer vision, and real-time analytics",
       icon: FaBrain,
       color: "neon-cyan"
     },
@@ -86,9 +86,10 @@ const About = () => {
             variants={itemVariants}
             className="text-xl text-text-gray max-w-3xl mx-auto leading-relaxed"
           >
-            A passionate Computer Science graduate student with a love for creating innovative solutions 
-            through code. My journey from IPS Academy to RIT has shaped my expertise in machine learning, 
-            big data analytics, functional programming, and full-stack development.
+            MS Computer Science student at RIT specializing in Machine Learning & AI. Selected for the 
+            DAAD RISE Professional Scholarship at BSH Hausgeräte GmbH (Bosch Group) in Berlin. My journey 
+            from IPS Academy to RIT has shaped expertise in scalable AI systems, big data analytics, 
+            functional programming, and full-stack engineering.
           </motion.p>
         </motion.div>
 

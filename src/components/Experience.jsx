@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaBuilding, FaCalendarAlt, FaMapMarkerAlt, FaChevronDown, FaChevronUp, FaCode, FaChartLine, FaUsers, FaLightbulb } from 'react-icons/fa'
+import { FaBuilding, FaCalendarAlt, FaMapMarkerAlt, FaChevronDown, FaChevronUp, FaCode, FaChartLine, FaLightbulb, FaGraduationCap, FaGlobeAmericas } from 'react-icons/fa'
 
 const Experience = () => {
   const [expandedCard, setExpandedCard] = useState(null)
@@ -8,25 +8,70 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: "Verzeo EduTech",
+      company: "BSH Hausgeräte GmbH (Bosch Group)",
+      position: "DAAD RISE Professional Scholar — AI & Embedded Systems Intern",
+      duration: "Incoming · 6 months",
+      location: "Berlin, Germany",
+      type: "Scholarship Internship",
+      description: "Selected for the DAAD RISE Professional Scholarship to work on AI applications in embedded systems, data analytics, and intelligent features for consumer appliances.",
+      achievements: [
+        "Selected for competitive **DAAD RISE Professional** scholarship program",
+        "Will contribute to **AI in embedded systems** and data analytics for consumer appliances",
+        "Opportunity to work with a global leader in home appliance technology and innovation",
+        "Focus on scalable AI systems at the intersection of **machine learning and product engineering**"
+      ],
+      technologies: ["Python", "Machine Learning", "Embedded Systems", "Data Analytics", "AI"],
+      metrics: [
+        { label: "Program", value: "DAAD RISE", improvement: "Professional Scholarship" },
+        { label: "Duration", value: "6 months", improvement: "Berlin, Germany" },
+        { label: "Focus", value: "AI + Embedded", improvement: "Consumer appliances" }
+      ],
+      icon: FaGlobeAmericas,
+      color: "neon-purple"
+    },
+    {
+      id: 2,
+      company: "Rochester Institute of Technology",
+      position: "Grader — CSCI-243 The Mechanics of Programming",
+      duration: "Jan 2026 – Present",
+      location: "Rochester, NY",
+      type: "Academic",
+      description: "Grading programming assignments focused on program structure, execution mechanics, and translation processes while reinforcing core programming fundamentals.",
+      achievements: [
+        "Graded assignments on **program structure, execution mechanics**, and translation processes",
+        "Reviewed code for **correctness, efficiency, and security** with constructive feedback",
+        "Supported course instruction by reinforcing **core programming fundamentals** and consistent grading standards",
+        "Evaluated student submissions across multiple programming paradigms and language concepts"
+      ],
+      technologies: ["C", "Programming Fundamentals", "Code Review", "Security Analysis"],
+      metrics: [
+        { label: "Course", value: "CSCI-243", improvement: "Mechanics of Programming" },
+        { label: "Focus", value: "Grading", improvement: "Code review & feedback" },
+        { label: "Since", value: "Jan 2026", improvement: "Current role" }
+      ],
+      icon: FaGraduationCap,
+      color: "neon-cyan"
+    },
+    {
+      id: 3,
+      company: "Verzeo",
       position: "Machine Learning Intern",
       duration: "May 2021 – July 2021",
-      location: "Indore, India",
+      location: "Bangalore, India",
       type: "Internship",
       description: "Developed and implemented machine learning models for educational data analysis and recommendation systems.",
       achievements: [
-        "Achieved **71% accuracy** with ML models employing Naïve Bayes, SVM, and Logistic Regression, outperforming **baseline by 15%**",
-        "Transformed preprocessing pipeline to cut sparse features by **30%** and expedite training with the aid of Python and TensorFlow",
-        "Designed a content-based movie recommendation system that processed **5,000+ movies** and delivered top-5 personalized recommendations in under **1 second/query**",
-        "Created interactive dashboards to analyze user behavior and feature correlations, cutting manual analysis time by **50%**"
+        "Improved ML model accuracy by **15%** using Naïve Bayes, SVM, and Logistic Regression, outperforming baseline results",
+        "Re-engineered preprocessing pipelines, reducing sparse features by **30%** and accelerating training time by **25%**",
+        "Designed a content-based movie recommendation system processing **5,000+ movies** with top-5 results in under **1 second**",
+        "Built interactive analytical dashboards cutting manual analysis time by **50%**"
       ],
-      technologies: ["Python", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Naïve Bayes", "SVM", "Logistic Regression"],
+      technologies: ["Python", "TensorFlow", "NumPy", "Scikit-learn", "Pandas", "Naïve Bayes", "SVM", "Logistic Regression"],
       metrics: [
-        { label: "Model Accuracy", value: "71%", improvement: "+15% vs baseline" },
+        { label: "Accuracy Gain", value: "+15%", improvement: "vs baseline models" },
         { label: "Movies Processed", value: "5,000+", improvement: "Content-based system" },
         { label: "Query Speed", value: "<1 second", improvement: "Top-5 recommendations" },
-        { label: "Feature Reduction", value: "30%", improvement: "Sparse features cut" },
-        { label: "Analysis Time", value: "50%", improvement: "Manual time reduction" }
+        { label: "Training Speed", value: "+25%", improvement: "Pipeline optimization" }
       ],
       icon: FaBuilding,
       color: "neon-cyan"
@@ -268,9 +313,9 @@ const Experience = () => {
                 <span className="gradient-text">What's Next?</span>
               </h3>
               <p className="text-text-gray leading-relaxed max-w-2xl mx-auto">
-                I'm actively seeking opportunities to apply my skills in machine learning and full-stack development 
-                to solve real-world problems. I'm particularly interested in roles that combine AI/ML with web development, 
-                allowing me to create intelligent, user-friendly applications.
+                I'm heading to Berlin as a DAAD RISE Professional Scholar at BSH (Bosch Group), where I'll work on 
+                AI applications in embedded systems. I'm excited to grow at the intersection of scalable AI, 
+                full-stack engineering, and impactful product development while continuing to build research-driven projects.
               </p>
             </div>
           </motion.div>

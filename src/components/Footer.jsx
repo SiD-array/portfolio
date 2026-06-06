@@ -8,11 +8,11 @@ const Footer = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const terminalMessages = [
-    "> Currently coding something cool in React ⚡",
-    "> Building amazing user experiences 🚀",
-    "> Learning new technologies daily 📚",
-    "> Contributing to open source projects 💻",
-    "> Creating innovative solutions 🎯"
+    "> Incoming DAAD RISE Scholar @ BSH (Bosch Group) 🇩🇪",
+    "> Building scalable AI systems with Python & React ⚡",
+    "> Grading CSCI-243 @ RIT while shipping ML projects 🎓",
+    "> Exploring agentic AI & multi-agent orchestration 🤖",
+    "> Open to connect — let's build something impactful 🚀"
   ]
 
   useEffect(() => {
@@ -48,17 +48,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: FaGithub,
-      url: "https://github.com/siddharthbhople",
+      url: "https://github.com/SiD-array",
       label: "GitHub"
     },
     {
       icon: FaLinkedin,
-      url: "https://linkedin.com/in/siddharthbhople",
+      url: "https://www.linkedin.com/in/siddharth-bhople",
       label: "LinkedIn"
     },
     {
       icon: FaEnvelope,
-      url: "mailto:siddharth.bhople@example.com",
+      url: "mailto:sid.work0403@gmail.com",
       label: "Email"
     }
   ]
@@ -130,9 +130,9 @@ const Footer = () => {
                 &lt;SB/&gt;
               </motion.div>
               <p className="text-text-gray leading-relaxed mb-6 max-w-md">
-                A passionate Computer Science graduate student specializing in 
-                full-stack development, machine learning, and data visualization. 
-                Building the future, one line of code at a time.
+                MS CS @ RIT · Incoming DAAD RISE Scholar @ BSH (Bosch Group). 
+                Software & ML Engineer building scalable AI systems across 
+                full-stack development, bioinformatics, and embedded intelligence.
               </p>
               
               {/* Social Links */}
@@ -202,7 +202,7 @@ const Footer = () => {
                 </p>
                 <p className="text-text-gray">
                   <span className="text-neon-cyan">Status:</span><br />
-                  Available for opportunities
+                  Incoming DAAD RISE Scholar @ Bosch
                 </p>
               </div>
             </motion.div>
@@ -219,7 +219,7 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-text-gray">
-              <span>© 2025 Siddharth Bhople. Made with</span>
+              <span>© 2026 Siddharth Bhople. Made with</span>
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1, repeat: Infinity }}
