@@ -88,7 +88,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 1.5 }}
           className="py-12 border-b border-border-gray"
         >
           <div className="glass-effect p-6 rounded-lg max-w-4xl mx-auto">
