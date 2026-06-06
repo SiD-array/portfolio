@@ -2,18 +2,21 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaEnvelope, FaHeart, FaCode, FaRocket } from 'react-icons/fa'
 
+const TERMINAL_MESSAGES = [
+  "> Intern Pre-Development @ BSH Home Appliances Group, Berlin 🇩🇪",
+  "> Building AI-driven features for embedded & backend systems 🤖",
+  "> DAAD RISE Professional Scholar · MS CS @ RIT 🎓",
+  "> Shipping production ML projects with Python, React & LangGraph ⚡",
+  "> Open to connect — let's build something impactful 🚀"
+]
+
+const TYPING_SPEED_MS = 55
+const PAUSE_AFTER_COMPLETE_MS = 3000
+
 const Footer = () => {
   const [currentTime, setCurrentTime] = useState(new Date())
   const [terminalText, setTerminalText] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
-
-  const terminalMessages = [
-    "> Intern Pre-Development @ BSH Home Appliances Group, Berlin 🇩🇪",
-    "> Building AI-driven features for embedded & backend systems 🤖",
-    "> DAAD RISE Professional Scholar · MS CS @ RIT 🎓",
-    "> Shipping production ML projects with Python, React & LangGraph ⚡",
-    "> Open to connect — let's build something impactful 🚀"
-  ]
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -24,27 +27,31 @@ const Footer = () => {
   }, [])
 
   useEffect(() => {
-    const messageTimer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % terminalMessages.length)
-    }, 3000)
+    const message = TERMINAL_MESSAGES[currentIndex]
+    let charIndex = 0
+    let typingTimer
+    let pauseTimer
 
-    return () => clearInterval(messageTimer)
-  }, [])
-
-  useEffect(() => {
     setTerminalText('')
 
-    const textTimer = setInterval(() => {
-      const currentMessage = terminalMessages[currentIndex]
-      setTerminalText((prev) => {
-        if (prev.length < currentMessage.length) {
-          return currentMessage.slice(0, prev.length + 1)
-        }
-        return prev
-      })
-    }, 100)
+    const typeNextChar = () => {
+      if (charIndex < message.length) {
+        charIndex += 1
+        setTerminalText(message.slice(0, charIndex))
+        typingTimer = setTimeout(typeNextChar, TYPING_SPEED_MS)
+      } else {
+        pauseTimer = setTimeout(() => {
+          setCurrentIndex((prev) => (prev + 1) % TERMINAL_MESSAGES.length)
+        }, PAUSE_AFTER_COMPLETE_MS)
+      }
+    }
 
-    return () => clearInterval(textTimer)
+    typingTimer = setTimeout(typeNextChar, TYPING_SPEED_MS)
+
+    return () => {
+      clearTimeout(typingTimer)
+      clearTimeout(pauseTimer)
+    }
   }, [currentIndex])
 
   const socialLinks = [
@@ -88,7 +95,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 0.6 }}
           className="py-12 border-b border-border-gray"
         >
           <div className="glass-effect p-6 rounded-lg max-w-4xl mx-auto">
@@ -100,7 +107,7 @@ const Footer = () => {
               </div>
               <span className="text-text-gray text-sm font-mono">Terminal</span>
             </div>
-            <div className="font-mono text-neon-cyan">
+            <div className="font-mono text-neon-cyan min-h-[3.5rem] flex items-center">
               <span>{terminalText}</span>
               <motion.span
                 animate={{ opacity: [0, 1, 0] }}
