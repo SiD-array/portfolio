@@ -8,23 +8,23 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: "BSH Hausgeräte GmbH (Bosch Group)",
-      position: "DAAD RISE Professional Scholar — AI & Embedded Systems Intern",
-      duration: "2026 – Present · 6 months",
-      location: "Berlin, Germany",
-      type: "Current · Scholarship Internship",
-      description: "DAAD RISE Professional Scholar working on AI applications in embedded systems, data analytics, and intelligent features for consumer smart appliances at BSH, part of the Bosch Group.",
+      company: "BSH Home Appliances Group",
+      position: "Intern Pre-Development",
+      duration: "May 2026 – Present",
+      location: "Berlin, Germany · On-site",
+      type: "Full-time",
+      description: "Selected as a DAAD RISE Professional Scholar to contribute to AI-driven feature development for embedded and backend systems within next-generation smart appliances.",
       achievements: [
-        "Contributing to **AI in embedded systems** and on-device intelligence for consumer appliances",
-        "Applying **data analytics and ML pipelines** to real-world product engineering challenges",
-        "Working with a global leader in home appliance technology on **scalable, production-ready AI**",
-        "Building at the intersection of **machine learning, embedded systems, and intelligent automation**"
+        "Contributing to **AI-driven feature development** for embedded and backend systems",
+        "Working on **next-generation smart appliances** as a DAAD RISE Professional Scholar",
+        "Applying **data analysis and machine learning** to pre-development engineering challenges",
+        "Building production-oriented solutions at the intersection of **embedded systems and intelligent automation**"
       ],
-      technologies: ["Python", "Machine Learning", "Embedded AI", "Data Analytics", "Cloud", "LLMOps"],
+      technologies: ["Python", "Machine Learning", "Data Analysis", "Embedded Systems", "Backend Systems"],
       metrics: [
         { label: "Program", value: "DAAD RISE", improvement: "Professional Scholar" },
-        { label: "Location", value: "Berlin", improvement: "Bosch Group · BSH" },
-        { label: "Focus", value: "Embedded AI", improvement: "Smart appliances" }
+        { label: "Location", value: "Berlin", improvement: "On-site · Full-time" },
+        { label: "Focus", value: "Pre-Dev", improvement: "Embedded & backend AI" }
       ],
       icon: FaGlobeAmericas,
       color: "neon-purple"
@@ -32,22 +32,22 @@ const Experience = () => {
     {
       id: 2,
       company: "Rochester Institute of Technology",
-      position: "Grader — CSCI-243 The Mechanics of Programming",
-      duration: "Jan 2026 – Present",
-      location: "Rochester, NY",
-      type: "Academic",
-      description: "Grading programming assignments focused on program structure, execution mechanics, and translation processes while reinforcing core programming fundamentals.",
+      position: "Grader — CSCI-243: The Mechanics of Programming",
+      duration: "Jan 2026 – Apr 2026",
+      location: "Rochester, New York, United States · On-site",
+      type: "Part-time",
+      description: "Graded programming assignments focused on program structure, execution mechanics, and translation processes.",
       achievements: [
         "Graded assignments on **program structure, execution mechanics**, and translation processes",
         "Reviewed code for **correctness, efficiency, and security** with constructive feedback",
         "Supported course instruction by reinforcing **core programming fundamentals** and consistent grading standards",
         "Evaluated student submissions across multiple programming paradigms and language concepts"
       ],
-      technologies: ["C", "Programming Fundamentals", "Code Review", "Security Analysis"],
+      technologies: ["Programming Fundamentals", "Code Review", "C", "Security Analysis"],
       metrics: [
         { label: "Course", value: "CSCI-243", improvement: "Mechanics of Programming" },
-        { label: "Focus", value: "Grading", improvement: "Code review & feedback" },
-        { label: "Since", value: "Jan 2026", improvement: "Current role" }
+        { label: "Duration", value: "4 months", improvement: "Jan – Apr 2026" },
+        { label: "Format", value: "Part-time", improvement: "On-site at RIT" }
       ],
       icon: FaGraduationCap,
       color: "neon-cyan"
@@ -56,10 +56,10 @@ const Experience = () => {
       id: 3,
       company: "Verzeo",
       position: "Machine Learning Intern",
-      duration: "May 2021 – July 2021",
-      location: "Bangalore, India",
+      duration: "May 2021 – Jul 2021",
+      location: "India · Remote",
       type: "Internship",
-      description: "Developed and implemented machine learning models for educational data analysis and recommendation systems.",
+      description: "Improved machine learning model accuracy by 15% using algorithms such as Naïve Bayes, SVM, and Logistic Regression, outperforming baseline results.",
       achievements: [
         "Improved ML model accuracy by **15%** using Naïve Bayes, SVM, and Logistic Regression, outperforming baseline results",
         "Re-engineered preprocessing pipelines, reducing sparse features by **30%** and accelerating training time by **25%**",
@@ -328,9 +328,10 @@ const Experience = () => {
                 <span className="gradient-text">What's Next?</span>
               </h3>
               <p className="text-text-gray leading-relaxed max-w-2xl mx-auto">
-                I'm currently at BSH (Bosch Group) in Berlin as a DAAD RISE Professional Scholar, contributing to 
-                embedded AI and intelligent appliance features. Alongside my MS at RIT, I'm continuing to ship 
-                production ML systems and research-driven projects in agentic AI, computer vision, and data engineering.
+                I'm currently at BSH Home Appliances Group in Berlin as an Intern Pre-Development and DAAD RISE 
+                Professional Scholar, contributing to AI-driven features for embedded and backend systems. Alongside 
+                my MS at RIT, I'm continuing to ship production ML systems and research-driven projects in agentic 
+                AI, computer vision, and data engineering.
               </p>
             </div>
           </motion.div>
