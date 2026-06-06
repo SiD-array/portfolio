@@ -8,10 +8,10 @@ const Footer = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const terminalMessages = [
-    "> Incoming DAAD RISE Scholar @ BSH (Bosch Group) 🇩🇪",
-    "> Building scalable AI systems with Python & React ⚡",
-    "> Grading CSCI-243 @ RIT while shipping ML projects 🎓",
-    "> Exploring agentic AI & multi-agent orchestration 🤖",
+    "> DAAD RISE Scholar @ BSH (Bosch Group), Berlin 🇩🇪",
+    "> Working on embedded AI & intelligent appliance systems 🤖",
+    "> Building scalable AI with Python, React & LangGraph ⚡",
+    "> Grading CSCI-243 @ RIT · shipping production ML projects 🎓",
     "> Open to connect — let's build something impactful 🚀"
   ]
 
@@ -130,9 +130,9 @@ const Footer = () => {
                 &lt;SB/&gt;
               </motion.div>
               <p className="text-text-gray leading-relaxed mb-6 max-w-md">
-                MS CS @ RIT · Incoming DAAD RISE Scholar @ BSH (Bosch Group). 
+                DAAD RISE Scholar @ BSH (Bosch Group) · MS CS @ RIT. 
                 Software & ML Engineer building scalable AI systems across 
-                full-stack development, bioinformatics, and embedded intelligence.
+                embedded intelligence, agentic AI, and full-stack development.
               </p>
               
               {/* Social Links */}
@@ -198,11 +198,11 @@ const Footer = () => {
                 </p>
                 <p className="text-text-gray">
                   <span className="text-neon-purple">Location:</span><br />
-                  Rochester, NY, USA
+                  Berlin, Germany · MS @ RIT
                 </p>
                 <p className="text-text-gray">
                   <span className="text-neon-cyan">Status:</span><br />
-                  Incoming DAAD RISE Scholar @ Bosch
+                  DAAD RISE Scholar @ BSH, Berlin
                 </p>
               </div>
             </motion.div>

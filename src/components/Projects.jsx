@@ -7,7 +7,7 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [showAllCompleted, setShowAllCompleted] = useState(false)
   const [showAllInProgress, setShowAllInProgress] = useState(false)
-  const [starredProjects, setStarredProjects] = useState([1, 2, 5]) // Default starred project IDs
+  const [starredProjects, setStarredProjects] = useState([8, 5, 1]) // Default starred project IDs
   
   const PROJECTS_TO_SHOW = 3
   const MAX_STARRED = 3
@@ -194,6 +194,33 @@ const Projects = () => {
       ]
     },
     {
+      id: 8,
+      title: "Autonomous Cloud Governance",
+      description: "Multi-agent cloud system with real-time fiscal governance, agentic circuit breakers, and dynamic model routing to prevent cloud bill shock in autonomous AI workflows.",
+      longDescription: "Budget-Aware AI Squad is a decentralized multi-agent framework integrating financial self-awareness into AI agent meshes. It acts as a fiscal guardrail ensuring autonomous systems stay within budget through Supervisor, Accountant, Researcher, and Writer agents with cost-aware orchestration and complexity-aware routing.",
+      image: "/api/placeholder/600/400",
+      technologies: ["Python", "LangGraph", "Ollama", "AWS", "React", "Multi-Agent Systems", "FinOps"],
+      category: "ml",
+      github: "https://github.com/SiD-array/Autonomous-Cloud-Governance",
+      live: "https://autonomous-cloud-governance.vercel.app",
+      features: [
+        "Agentic Circuit Breakers",
+        "Dynamic Model Routing",
+        "Real-time Cost Telemetry",
+        "Multi-agent Orchestration",
+        "Local LLM Integration"
+      ],
+      icon: FaCloud,
+      color: "neon-cyan",
+      date: "April 2026",
+      achievements: [
+        "Shipped multi-agent pipeline with Supervisor-Accountant-Researcher-Writer orchestration",
+        "Built fiscal ledger and circuit breakers for real-time budget governance",
+        "Integrated Ollama for local LLM execution with complexity-aware model routing",
+        "Deployed live demo on Vercel with AWS-backed cloud infrastructure"
+      ]
+    },
+    {
       id: 7,
       title: "PG Life Web Application",
       description: "Pioneered full-stack housing platform for exploring and bookmarking accommodations across multiple cities with user authentication.",
@@ -224,34 +251,6 @@ const Projects = () => {
 
   // In-Progress Projects
   const inProgressProjects = [
-    {
-      id: 101,
-      title: "Autonomous Cloud Governance",
-      description: "Proactive multi-agent orchestration with real-time fiscal governance. Features 'Agentic Circuit Breakers' and dynamic model routing to prevent cloud bill shock in autonomous workflows.",
-      longDescription: "Budget-Aware AI Squad is a decentralized framework integrating financial self-awareness into AI agent meshes. It acts as a 'Fiscal Guardrail' ensuring autonomous systems stay within budget while maintaining high task performance through Supervisor, Accountant, Researcher, and Writer agents.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Python", "Ollama", "LocalStack", "LangGraph", "Multi-Agent Systems", "FinOps"],
-      category: "ml",
-      github: "https://github.com/SiD-array/Autonomous-Cloud-Governance",
-      live: "https://autonomous-cloud-governance.vercel.app",
-      features: [
-        "Agentic Circuit Breakers",
-        "Dynamic Model Routing",
-        "Real-time Cost Telemetry",
-        "Multi-agent Orchestration",
-        "Local LLM Integration"
-      ],
-      icon: FaCloud,
-      color: "neon-cyan",
-      date: "In Progress",
-      status: "in-progress",
-      achievements: [
-        "Implementing Supervisor-Accountant-Researcher-Writer agent pipeline",
-        "Building fiscal ledger for token cost tracking",
-        "Creating circuit breakers for budget governance",
-        "Integrating Ollama for local LLM execution"
-      ]
-    },
     {
       id: 102,
       title: "SignLens - Real-Time ASL Recognition",

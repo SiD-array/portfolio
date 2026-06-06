@@ -86,10 +86,11 @@ const About = () => {
             variants={itemVariants}
             className="text-xl text-text-gray max-w-3xl mx-auto leading-relaxed"
           >
-            MS Computer Science student at RIT specializing in Machine Learning & AI. Selected for the 
-            DAAD RISE Professional Scholarship at BSH Hausgeräte GmbH (Bosch Group) in Berlin. My journey 
-            from IPS Academy to RIT has shaped expertise in scalable AI systems, big data analytics, 
-            functional programming, and full-stack engineering.
+            MS Computer Science student at RIT specializing in Machine Learning & AI, and DAAD RISE 
+            Professional Scholar at BSH Hausgeräte GmbH (Bosch Group) in Berlin — working on embedded AI, 
+            data analytics, and intelligent features for consumer smart appliances. My journey from IPS 
+            Academy to RIT and Bosch has shaped expertise in scalable AI systems, cloud architecture, 
+            and full-stack engineering.
           </motion.p>
         </motion.div>
 

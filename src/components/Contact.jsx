@@ -94,7 +94,7 @@ const Contact = () => {
     {
       icon: FaMapMarkerAlt,
       title: "Location",
-      value: "Rochester, NY, USA",
+      value: "Berlin, Germany · MS @ RIT",
       link: "#",
       color: "neon-cyan"
     }
@@ -252,9 +252,9 @@ const Contact = () => {
                 </h4>
               </div>
               <p className="text-text-gray leading-relaxed">
-                Selected for the DAAD RISE Professional Scholarship at BSH (Bosch Group) in Berlin. 
-                Open to connecting on full-stack development, machine learning, and scalable AI projects. 
-                Let's discuss how we can collaborate!
+                Currently a DAAD RISE Professional Scholar at BSH (Bosch Group) in Berlin, working on 
+                embedded AI and intelligent appliance systems. Open to connecting on ML engineering, 
+                agentic AI, and scalable software projects — let's collaborate!
               </p>
             </motion.div>
           </motion.div>

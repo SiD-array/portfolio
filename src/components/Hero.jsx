@@ -7,7 +7,7 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   
-  const fullText = "Hi, I'm Siddharth 👋 — MS CS @ RIT | Incoming DAAD RISE Scholar @ BSH (Bosch Group) | Building Scalable AI Systems."
+  const fullText = "Hi, I'm Siddharth 👋 — DAAD RISE Scholar @ BSH (Bosch Group) | MS CS @ RIT | Building Scalable AI Systems."
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -149,9 +149,9 @@ const Hero = () => {
           variants={itemVariants}
           className="text-lg md:text-xl text-text-gray mb-12 max-w-3xl mx-auto leading-relaxed"
         >
-          Software & Machine Learning Engineer passionate about building scalable AI systems. 
-          I specialize in full-stack development, interpretable ML pipelines, big data analytics, 
-          and embedded AI — from cancer biomarker discovery to real-time market intelligence.
+          DAAD RISE Professional Scholar at BSH (Bosch Group), working on AI in embedded systems 
+          and intelligent consumer appliances. I build scalable AI systems across full-stack development, 
+          interpretable ML pipelines, multi-agent orchestration, and production-ready data workflows.
         </motion.p>
 
         {/* CTA Buttons */}

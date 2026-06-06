@@ -306,7 +306,7 @@ const Skills = () => {
             </h3>
             <p className="text-text-gray leading-relaxed mb-6">
               I'm constantly exploring new technologies to stay at the forefront of software development. 
-              Currently deepening expertise in agentic AI, embedded systems, multi-agent orchestration, and scalable cloud architectures.
+              Currently applying embedded AI at BSH (Bosch Group) while deepening expertise in agentic systems, multi-agent orchestration, and scalable cloud architectures.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <motion.div

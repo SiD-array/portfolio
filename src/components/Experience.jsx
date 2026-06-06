@@ -10,21 +10,21 @@ const Experience = () => {
       id: 1,
       company: "BSH Hausgeräte GmbH (Bosch Group)",
       position: "DAAD RISE Professional Scholar — AI & Embedded Systems Intern",
-      duration: "Incoming · 6 months",
+      duration: "2026 – Present · 6 months",
       location: "Berlin, Germany",
-      type: "Scholarship Internship",
-      description: "Selected for the DAAD RISE Professional Scholarship to work on AI applications in embedded systems, data analytics, and intelligent features for consumer appliances.",
+      type: "Current · Scholarship Internship",
+      description: "DAAD RISE Professional Scholar working on AI applications in embedded systems, data analytics, and intelligent features for consumer smart appliances at BSH, part of the Bosch Group.",
       achievements: [
-        "Selected for competitive **DAAD RISE Professional** scholarship program",
-        "Will contribute to **AI in embedded systems** and data analytics for consumer appliances",
-        "Opportunity to work with a global leader in home appliance technology and innovation",
-        "Focus on scalable AI systems at the intersection of **machine learning and product engineering**"
+        "Contributing to **AI in embedded systems** and on-device intelligence for consumer appliances",
+        "Applying **data analytics and ML pipelines** to real-world product engineering challenges",
+        "Working with a global leader in home appliance technology on **scalable, production-ready AI**",
+        "Building at the intersection of **machine learning, embedded systems, and intelligent automation**"
       ],
-      technologies: ["Python", "Machine Learning", "Embedded Systems", "Data Analytics", "AI"],
+      technologies: ["Python", "Machine Learning", "Embedded AI", "Data Analytics", "Cloud", "LLMOps"],
       metrics: [
-        { label: "Program", value: "DAAD RISE", improvement: "Professional Scholarship" },
-        { label: "Duration", value: "6 months", improvement: "Berlin, Germany" },
-        { label: "Focus", value: "AI + Embedded", improvement: "Consumer appliances" }
+        { label: "Program", value: "DAAD RISE", improvement: "Professional Scholar" },
+        { label: "Location", value: "Berlin", improvement: "Bosch Group · BSH" },
+        { label: "Focus", value: "Embedded AI", improvement: "Smart appliances" }
       ],
       icon: FaGlobeAmericas,
       color: "neon-purple"
@@ -313,9 +313,9 @@ const Experience = () => {
                 <span className="gradient-text">What's Next?</span>
               </h3>
               <p className="text-text-gray leading-relaxed max-w-2xl mx-auto">
-                I'm heading to Berlin as a DAAD RISE Professional Scholar at BSH (Bosch Group), where I'll work on 
-                AI applications in embedded systems. I'm excited to grow at the intersection of scalable AI, 
-                full-stack engineering, and impactful product development while continuing to build research-driven projects.
+                I'm currently at BSH (Bosch Group) in Berlin as a DAAD RISE Professional Scholar, contributing to 
+                embedded AI and intelligent appliance features. Alongside my MS at RIT, I'm continuing to ship 
+                production ML systems and research-driven projects in agentic AI, computer vision, and data engineering.
               </p>
             </div>
           </motion.div>
