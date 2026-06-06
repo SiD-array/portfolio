@@ -141,32 +141,20 @@ const Experience = () => {
             {/* Central Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-neon-cyan via-neon-purple to-neon-cyan hidden md:block"></div>
             
-            {experiences.map((exp, index) => (
-              <motion.div
-                key={exp.id}
-                variants={itemVariants}
-                className="relative flex flex-col md:flex-row items-center mb-16"
-              >
-                {/* Timeline Dot */}
+            {experiences.map((exp, index) => {
+              const TimelineDot = (
                 <motion.div
                   whileHover={{ scale: 1.2 }}
-                  className={`absolute left-1/2 transform -translate-x-1/2 z-10 w-16 h-16 rounded-full bg-${exp.color}/20 border-4 border-${exp.color} items-center justify-center hidden md:flex`}
+                  className={`w-16 h-16 shrink-0 rounded-full bg-${exp.color}/20 border-4 border-${exp.color} flex items-center justify-center z-10`}
                 >
                   <exp.icon className={`text-${exp.color}`} size={20} />
                 </motion.div>
+              )
 
-                {/* Mobile Timeline Dot */}
-                <motion.div
-                  whileHover={{ scale: 1.2 }}
-                  className={`w-16 h-16 rounded-full bg-${exp.color}/20 border-4 border-${exp.color} flex items-center justify-center mb-4 md:hidden`}
-                >
-                  <exp.icon className={`text-${exp.color}`} size={20} />
-                </motion.div>
-
-                {/* Content Card */}
+              const ExperienceCard = (
                 <motion.div
                   whileHover={{ scale: 1.02, y: -5 }}
-                  className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}
+                  className="w-full"
                 >
                   <div className="glass-effect p-6 rounded-lg hover:neon-glow transition-all duration-300">
                     {/* Header */}
@@ -299,8 +287,35 @@ const Experience = () => {
                     </AnimatePresence>
                   </div>
                 </motion.div>
-              </motion.div>
-            ))}
+              )
+
+              return (
+                <motion.div
+                  key={exp.id}
+                  variants={itemVariants}
+                  className="relative mb-16"
+                >
+                  {/* Mobile layout */}
+                  <div className="flex flex-col items-center md:hidden">
+                    {TimelineDot}
+                    <div className="w-full mt-4">{ExperienceCard}</div>
+                  </div>
+
+                  {/* Desktop layout — fixed center column keeps all dots on the timeline */}
+                  <div className="hidden md:grid md:grid-cols-[1fr_4rem_1fr] md:items-center md:gap-8">
+                    <div className={index % 2 === 0 ? 'pr-4' : ''}>
+                      {index % 2 === 0 && ExperienceCard}
+                    </div>
+                    <div className="flex justify-center">
+                      {TimelineDot}
+                    </div>
+                    <div className={index % 2 !== 0 ? 'pl-4' : ''}>
+                      {index % 2 !== 0 && ExperienceCard}
+                    </div>
+                  </div>
+                </motion.div>
+              )
+            })}
           </div>
 
           {/* Future Goals */}
